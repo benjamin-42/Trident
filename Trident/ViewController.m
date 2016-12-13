@@ -8,11 +8,10 @@
 
 #import "ViewController.h"
 
-void initialize(void);
-uint32_t leak_kernel_base(void);
-void exploit(uint32_t);
+#import "exploit.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *label;
 @property (weak, nonatomic) IBOutlet UIButton *button;
 @end
 
@@ -20,12 +19,18 @@ void exploit(uint32_t);
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    NSString *version = nil;
+    
+#ifdef TARGET_IPAD_3_1_IOS_9_3_4
+    version = @"9.3.4, iPad3,1";
+#endif
+    
+#ifdef TARGET_IPHONE_5_2_IOS_9_2_1
+    version = @"9.2.1, iPhone5,2";
+#endif
+    
+    self.label.text = [NSString stringWithFormat:@"by benjamin, for iOS %@", version];
 }
 
 - (IBAction)start:(id)sender {
