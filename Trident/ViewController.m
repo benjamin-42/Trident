@@ -29,7 +29,11 @@
 #ifdef TARGET_IPHONE_5_2_IOS_9_2_1
     version = @"9.2.1, iPhone5,2";
 #endif
-    
+
+#ifdef TARGET_IPHONE_4_1_IOS_9_3_1
+	version = @"9.3.1, iPhone4,1";
+#endif
+	
     self.label.text = [NSString stringWithFormat:@"by benjamin, for iOS %@", version];
 }
 
