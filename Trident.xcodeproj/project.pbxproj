@@ -18,6 +18,13 @@
 		43CDFA561DCFA16600046EB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43CDFA541DCFA16600046EB0 /* LaunchScreen.storyboard */; };
 		43CDFA5E1DCFA1DE00046EB0 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43CDFA5D1DCFA1DE00046EB0 /* IOKit.framework */; };
 		43CDFA721DCFA34300046EB0 /* exploit.c in Sources */ = {isa = PBXBuildFile; fileRef = 43CDFA711DCFA34300046EB0 /* exploit.c */; };
+		9C31EE721E01969F00FEA406 /* target_iphone_4_1_ios_9_3_1.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C31EE701E01969F00FEA406 /* target_iphone_4_1_ios_9_3_1.c */; };
+		9C31EE751E0198DC00FEA406 /* target_ipad_2_1_ios_9_3_2.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C31EE731E0198DC00FEA406 /* target_ipad_2_1_ios_9_3_2.c */; };
+		9C31EE781E0198E400FEA406 /* target_ipad_2_2_ios_9_3_2.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C31EE761E0198E400FEA406 /* target_ipad_2_2_ios_9_3_2.c */; };
+		9C31EE7B1E0198EB00FEA406 /* target_ipad_2_3_ios_9_3_2.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C31EE791E0198EB00FEA406 /* target_ipad_2_3_ios_9_3_2.c */; };
+		9C31EE7E1E0198F200FEA406 /* target_ipad_2_4_ios_9_3_2.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C31EE7C1E0198F200FEA406 /* target_ipad_2_4_ios_9_3_2.c */; };
+		9C31EE931E019FB600FEA406 /* target_iphone_5_2_ios_9_3_2.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C31EE911E019FB600FEA406 /* target_iphone_5_2_ios_9_3_2.c */; };
+		9C31EE961E019FBF00FEA406 /* target_iphone_5_3_ios_9_3_2.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C31EE941E019FBF00FEA406 /* target_iphone_5_3_ios_9_3_2.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +54,20 @@
 		43CDFA6A1DCFA26C00046EB0 /* IOTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IOTypes.h; path = Headers/IOKit/IOTypes.h; sourceTree = "<group>"; };
 		43CDFA6B1DCFA26C00046EB0 /* OSMessageNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OSMessageNotification.h; path = Headers/IOKit/OSMessageNotification.h; sourceTree = "<group>"; };
 		43CDFA711DCFA34300046EB0 /* exploit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = exploit.c; sourceTree = "<group>"; };
+		9C31EE701E01969F00FEA406 /* target_iphone_4_1_ios_9_3_1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = target_iphone_4_1_ios_9_3_1.c; sourceTree = "<group>"; };
+		9C31EE711E01969F00FEA406 /* target_iphone_4_1_ios_9_3_1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = target_iphone_4_1_ios_9_3_1.h; sourceTree = "<group>"; };
+		9C31EE731E0198DC00FEA406 /* target_ipad_2_1_ios_9_3_2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = target_ipad_2_1_ios_9_3_2.c; sourceTree = "<group>"; };
+		9C31EE741E0198DC00FEA406 /* target_ipad_2_1_ios_9_3_2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = target_ipad_2_1_ios_9_3_2.h; sourceTree = "<group>"; };
+		9C31EE761E0198E400FEA406 /* target_ipad_2_2_ios_9_3_2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = target_ipad_2_2_ios_9_3_2.c; sourceTree = "<group>"; };
+		9C31EE771E0198E400FEA406 /* target_ipad_2_2_ios_9_3_2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = target_ipad_2_2_ios_9_3_2.h; sourceTree = "<group>"; };
+		9C31EE791E0198EB00FEA406 /* target_ipad_2_3_ios_9_3_2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = target_ipad_2_3_ios_9_3_2.c; sourceTree = "<group>"; };
+		9C31EE7A1E0198EB00FEA406 /* target_ipad_2_3_ios_9_3_2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = target_ipad_2_3_ios_9_3_2.h; sourceTree = "<group>"; };
+		9C31EE7C1E0198F200FEA406 /* target_ipad_2_4_ios_9_3_2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = target_ipad_2_4_ios_9_3_2.c; sourceTree = "<group>"; };
+		9C31EE7D1E0198F200FEA406 /* target_ipad_2_4_ios_9_3_2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = target_ipad_2_4_ios_9_3_2.h; sourceTree = "<group>"; };
+		9C31EE911E019FB600FEA406 /* target_iphone_5_2_ios_9_3_2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = target_iphone_5_2_ios_9_3_2.c; sourceTree = "<group>"; };
+		9C31EE921E019FB600FEA406 /* target_iphone_5_2_ios_9_3_2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = target_iphone_5_2_ios_9_3_2.h; sourceTree = "<group>"; };
+		9C31EE941E019FBF00FEA406 /* target_iphone_5_3_ios_9_3_2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = target_iphone_5_3_ios_9_3_2.c; sourceTree = "<group>"; };
+		9C31EE951E019FBF00FEA406 /* target_iphone_5_3_ios_9_3_2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = target_iphone_5_3_ios_9_3_2.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,10 +88,10 @@
 				2880F3231E015D030045C840 /* target_abstraction.h */,
 				2880F31A1E014AC80045C840 /* target.h */,
 				2880F3191E014AC80045C840 /* target.m */,
-				2880F3201E015A540045C840 /* target_ipad_3_1_ios_9_3_4.h */,
-				2880F31F1E015A540045C840 /* target_ipad_3_1_ios_9_3_4.c */,
-				2880F31D1E015A1A0045C840 /* target_iphone_5_2_ios_9_2_1.h */,
-				2880F31C1E015A1A0045C840 /* target_iphone_5_2_ios_9_2_1.c */,
+				9C31EE891E019B4E00FEA406 /* 9.2.1 */,
+				9C31EE881E019B4900FEA406 /* 9.3.1 */,
+				9C31EE8A1E019B5300FEA406 /* 9.3.2 */,
+				9C31EE8E1E019B7100FEA406 /* 9.3.4 */,
 			);
 			name = targets;
 			sourceTree = "<group>";
@@ -149,6 +170,124 @@
 			name = IOKit;
 			sourceTree = "<group>";
 		};
+		9C31EE811E019B1800FEA406 /* iPhone4,1 */ = {
+			isa = PBXGroup;
+			children = (
+				9C31EE701E01969F00FEA406 /* target_iphone_4_1_ios_9_3_1.c */,
+				9C31EE711E01969F00FEA406 /* target_iphone_4_1_ios_9_3_1.h */,
+			);
+			name = "iPhone4,1";
+			sourceTree = "<group>";
+		};
+		9C31EE821E019B1E00FEA406 /* iPhone5,2 */ = {
+			isa = PBXGroup;
+			children = (
+				2880F31C1E015A1A0045C840 /* target_iphone_5_2_ios_9_2_1.c */,
+				2880F31D1E015A1A0045C840 /* target_iphone_5_2_ios_9_2_1.h */,
+			);
+			name = "iPhone5,2";
+			sourceTree = "<group>";
+		};
+		9C31EE831E019B2300FEA406 /* iPad2,1 */ = {
+			isa = PBXGroup;
+			children = (
+				9C31EE731E0198DC00FEA406 /* target_ipad_2_1_ios_9_3_2.c */,
+				9C31EE741E0198DC00FEA406 /* target_ipad_2_1_ios_9_3_2.h */,
+			);
+			name = "iPad2,1";
+			sourceTree = "<group>";
+		};
+		9C31EE841E019B2900FEA406 /* iPad2,2 */ = {
+			isa = PBXGroup;
+			children = (
+				9C31EE761E0198E400FEA406 /* target_ipad_2_2_ios_9_3_2.c */,
+				9C31EE771E0198E400FEA406 /* target_ipad_2_2_ios_9_3_2.h */,
+			);
+			name = "iPad2,2";
+			sourceTree = "<group>";
+		};
+		9C31EE851E019B3500FEA406 /* iPad2,3 */ = {
+			isa = PBXGroup;
+			children = (
+				9C31EE791E0198EB00FEA406 /* target_ipad_2_3_ios_9_3_2.c */,
+				9C31EE7A1E0198EB00FEA406 /* target_ipad_2_3_ios_9_3_2.h */,
+			);
+			name = "iPad2,3";
+			sourceTree = "<group>";
+		};
+		9C31EE861E019B3A00FEA406 /* iPad2,4 */ = {
+			isa = PBXGroup;
+			children = (
+				9C31EE7C1E0198F200FEA406 /* target_ipad_2_4_ios_9_3_2.c */,
+				9C31EE7D1E0198F200FEA406 /* target_ipad_2_4_ios_9_3_2.h */,
+			);
+			name = "iPad2,4";
+			sourceTree = "<group>";
+		};
+		9C31EE871E019B3E00FEA406 /* iPad3,1 */ = {
+			isa = PBXGroup;
+			children = (
+				2880F31F1E015A540045C840 /* target_ipad_3_1_ios_9_3_4.c */,
+				2880F3201E015A540045C840 /* target_ipad_3_1_ios_9_3_4.h */,
+			);
+			name = "iPad3,1";
+			sourceTree = "<group>";
+		};
+		9C31EE881E019B4900FEA406 /* 9.3.1 */ = {
+			isa = PBXGroup;
+			children = (
+				9C31EE811E019B1800FEA406 /* iPhone4,1 */,
+			);
+			name = 9.3.1;
+			sourceTree = "<group>";
+		};
+		9C31EE891E019B4E00FEA406 /* 9.2.1 */ = {
+			isa = PBXGroup;
+			children = (
+				9C31EE821E019B1E00FEA406 /* iPhone5,2 */,
+			);
+			name = 9.2.1;
+			sourceTree = "<group>";
+		};
+		9C31EE8A1E019B5300FEA406 /* 9.3.2 */ = {
+			isa = PBXGroup;
+			children = (
+				9C31EE8F1E019F8200FEA406 /* iPhone5,2 */,
+				9C31EE901E019F8700FEA406 /* iPhone5,3 */,
+				9C31EE831E019B2300FEA406 /* iPad2,1 */,
+				9C31EE841E019B2900FEA406 /* iPad2,2 */,
+				9C31EE851E019B3500FEA406 /* iPad2,3 */,
+				9C31EE861E019B3A00FEA406 /* iPad2,4 */,
+			);
+			name = 9.3.2;
+			sourceTree = "<group>";
+		};
+		9C31EE8E1E019B7100FEA406 /* 9.3.4 */ = {
+			isa = PBXGroup;
+			children = (
+				9C31EE871E019B3E00FEA406 /* iPad3,1 */,
+			);
+			name = 9.3.4;
+			sourceTree = "<group>";
+		};
+		9C31EE8F1E019F8200FEA406 /* iPhone5,2 */ = {
+			isa = PBXGroup;
+			children = (
+				9C31EE911E019FB600FEA406 /* target_iphone_5_2_ios_9_3_2.c */,
+				9C31EE921E019FB600FEA406 /* target_iphone_5_2_ios_9_3_2.h */,
+			);
+			name = "iPhone5,2";
+			sourceTree = "<group>";
+		};
+		9C31EE901E019F8700FEA406 /* iPhone5,3 */ = {
+			isa = PBXGroup;
+			children = (
+				9C31EE941E019FBF00FEA406 /* target_iphone_5_3_ios_9_3_2.c */,
+				9C31EE951E019FBF00FEA406 /* target_iphone_5_3_ios_9_3_2.h */,
+			);
+			name = "iPhone5,3";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -220,12 +359,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C31EE751E0198DC00FEA406 /* target_ipad_2_1_ios_9_3_2.c in Sources */,
 				43CDFA4E1DCFA16600046EB0 /* ViewController.m in Sources */,
+				9C31EE931E019FB600FEA406 /* target_iphone_5_2_ios_9_3_2.c in Sources */,
+				9C31EE7B1E0198EB00FEA406 /* target_ipad_2_3_ios_9_3_2.c in Sources */,
+				9C31EE961E019FBF00FEA406 /* target_iphone_5_3_ios_9_3_2.c in Sources */,
 				2880F3211E015A540045C840 /* target_ipad_3_1_ios_9_3_4.c in Sources */,
+				9C31EE781E0198E400FEA406 /* target_ipad_2_2_ios_9_3_2.c in Sources */,
 				2880F31E1E015A1A0045C840 /* target_iphone_5_2_ios_9_2_1.c in Sources */,
 				43CDFA4B1DCFA16600046EB0 /* AppDelegate.m in Sources */,
 				43CDFA481DCFA16600046EB0 /* main.m in Sources */,
 				43CDFA721DCFA34300046EB0 /* exploit.c in Sources */,
+				9C31EE7E1E0198F200FEA406 /* target_ipad_2_4_ios_9_3_2.c in Sources */,
+				9C31EE721E01969F00FEA406 /* target_iphone_4_1_ios_9_3_1.c in Sources */,
 				2880F31B1E014AC80045C840 /* target.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
