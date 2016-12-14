@@ -46,7 +46,7 @@ static uint32_t check_offsets_pool[] = {
 	0x1e6, // MAC_PROC
 };
 
-void target_ipad2_1_ios_9_3_2_init(target_t *t)
+void target_ipad_2_1_ios_9_3_2_init(target_t *t)
 {
 	t->clock_ops_overwrite = clock_ops_overwrite;
 	t->clock_ops_overwrite_size = sizeof(clock_ops_overwrite);
