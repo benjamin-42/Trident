@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2880F31B1E014AC80045C840 /* target.c in Sources */ = {isa = PBXBuildFile; fileRef = 2880F3191E014AC80045C840 /* target.c */; };
+		2880F31B1E014AC80045C840 /* target.m in Sources */ = {isa = PBXBuildFile; fileRef = 2880F3191E014AC80045C840 /* target.m */; };
 		2880F31E1E015A1A0045C840 /* target_iphone_5_2_ios_9_2_1.c in Sources */ = {isa = PBXBuildFile; fileRef = 2880F31C1E015A1A0045C840 /* target_iphone_5_2_ios_9_2_1.c */; };
 		2880F3211E015A540045C840 /* target_ipad_3_1_ios_9_3_4.c in Sources */ = {isa = PBXBuildFile; fileRef = 2880F31F1E015A540045C840 /* target_ipad_3_1_ios_9_3_4.c */; };
 		43CDFA481DCFA16600046EB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CDFA471DCFA16600046EB0 /* main.m */; };
@@ -22,7 +22,7 @@
 
 /* Begin PBXFileReference section */
 		280E52501DFF78CB00FD3C93 /* exploit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = exploit.h; sourceTree = "<group>"; };
-		2880F3191E014AC80045C840 /* target.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = target.c; sourceTree = "<group>"; };
+		2880F3191E014AC80045C840 /* target.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = target.m; sourceTree = "<group>"; };
 		2880F31A1E014AC80045C840 /* target.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = target.h; sourceTree = "<group>"; };
 		2880F31C1E015A1A0045C840 /* target_iphone_5_2_ios_9_2_1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = target_iphone_5_2_ios_9_2_1.c; sourceTree = "<group>"; };
 		2880F31D1E015A1A0045C840 /* target_iphone_5_2_ios_9_2_1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = target_iphone_5_2_ios_9_2_1.h; sourceTree = "<group>"; };
@@ -66,11 +66,11 @@
 			children = (
 				2880F3231E015D030045C840 /* target_abstraction.h */,
 				2880F31A1E014AC80045C840 /* target.h */,
-				2880F3191E014AC80045C840 /* target.c */,
-				2880F31D1E015A1A0045C840 /* target_iphone_5_2_ios_9_2_1.h */,
-				2880F31C1E015A1A0045C840 /* target_iphone_5_2_ios_9_2_1.c */,
+				2880F3191E014AC80045C840 /* target.m */,
 				2880F3201E015A540045C840 /* target_ipad_3_1_ios_9_3_4.h */,
 				2880F31F1E015A540045C840 /* target_ipad_3_1_ios_9_3_4.c */,
+				2880F31D1E015A1A0045C840 /* target_iphone_5_2_ios_9_2_1.h */,
+				2880F31C1E015A1A0045C840 /* target_iphone_5_2_ios_9_2_1.c */,
 			);
 			name = targets;
 			sourceTree = "<group>";
@@ -226,7 +226,7 @@
 				43CDFA4B1DCFA16600046EB0 /* AppDelegate.m in Sources */,
 				43CDFA481DCFA16600046EB0 /* main.m in Sources */,
 				43CDFA721DCFA34300046EB0 /* exploit.c in Sources */,
-				2880F31B1E014AC80045C840 /* target.c in Sources */,
+				2880F31B1E014AC80045C840 /* target.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

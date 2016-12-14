@@ -11,6 +11,8 @@
 #include "exploit.h"
 #include "target.h"
 
+NSString *target_info(void);
+
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property (weak, nonatomic) IBOutlet UIButton *button;
@@ -22,18 +24,7 @@
     [super viewDidLoad];
     
     target_select();
-    
-    NSString *version = nil;
-    
-#ifdef TARGET_IPAD_3_1_IOS_9_3_4
-    version = @"9.3.4, iPad3,1";
-#endif
-    
-#ifdef TARGET_IPHONE_5_2_IOS_9_2_1
-    version = @"9.2.1, iPhone5,2";
-#endif
-    
-    self.label.text = [NSString stringWithFormat:@"by benjamin, for iOS %@", version];
+    self.label.text = [NSString stringWithFormat:@"by benjamin, for iOS %@", target_info()];
 }
 
 - (IBAction)start:(id)sender {

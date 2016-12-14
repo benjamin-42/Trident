@@ -13,6 +13,7 @@
 
 #include "target_abstraction.h"
 
+#define TARGET_IPHONE_5_2_IOS_9_2_1 (@"9.2.1, iPhone5,2")
 void target_iphone_5_2_ios_9_2_1_init(target_t *t);
 
 #endif /* target_iphone_5_2_ios_9_2_1_h */
