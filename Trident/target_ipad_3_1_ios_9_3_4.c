@@ -2,7 +2,7 @@
 //  target_ipad_3_1_ios_9_3_4.c
 //  Trident
 //
-//  Created by Karen Tsai on 12/14/16.
+//  Created by Simone Ferrini on 14/12/2016.
 //  Copyright © 2016 Benjamin Randazzo. All rights reserved.
 //
 

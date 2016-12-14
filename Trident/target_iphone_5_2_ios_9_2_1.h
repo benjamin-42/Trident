@@ -2,7 +2,7 @@
 //  target_iphone_5_2_ios_9_2_1.h
 //  Trident
 //
-//  Created by Karen Tsai on 12/14/16.
+//  Created by Simone Ferrini on 14/12/2016.
 //  Copyright © 2016 Benjamin Randazzo. All rights reserved.
 //
 
