@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 
-#import "exploit.h"
+#include "exploit.h"
+#include "target.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *label;
@@ -19,6 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    target_select();
     
     NSString *version = nil;
     

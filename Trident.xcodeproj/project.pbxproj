@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2880F31B1E014AC80045C840 /* target.c in Sources */ = {isa = PBXBuildFile; fileRef = 2880F3191E014AC80045C840 /* target.c */; };
+		2880F31E1E015A1A0045C840 /* target_iphone_5_2_ios_9_2_1.c in Sources */ = {isa = PBXBuildFile; fileRef = 2880F31C1E015A1A0045C840 /* target_iphone_5_2_ios_9_2_1.c */; };
+		2880F3211E015A540045C840 /* target_ipad_3_1_ios_9_3_4.c in Sources */ = {isa = PBXBuildFile; fileRef = 2880F31F1E015A540045C840 /* target_ipad_3_1_ios_9_3_4.c */; };
 		43CDFA481DCFA16600046EB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CDFA471DCFA16600046EB0 /* main.m */; };
 		43CDFA4B1DCFA16600046EB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CDFA4A1DCFA16600046EB0 /* AppDelegate.m */; };
 		43CDFA4E1DCFA16600046EB0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CDFA4D1DCFA16600046EB0 /* ViewController.m */; };
@@ -19,6 +22,13 @@
 
 /* Begin PBXFileReference section */
 		280E52501DFF78CB00FD3C93 /* exploit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = exploit.h; sourceTree = "<group>"; };
+		2880F3191E014AC80045C840 /* target.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = target.c; sourceTree = "<group>"; };
+		2880F31A1E014AC80045C840 /* target.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = target.h; sourceTree = "<group>"; };
+		2880F31C1E015A1A0045C840 /* target_iphone_5_2_ios_9_2_1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = target_iphone_5_2_ios_9_2_1.c; sourceTree = "<group>"; };
+		2880F31D1E015A1A0045C840 /* target_iphone_5_2_ios_9_2_1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = target_iphone_5_2_ios_9_2_1.h; sourceTree = "<group>"; };
+		2880F31F1E015A540045C840 /* target_ipad_3_1_ios_9_3_4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = target_ipad_3_1_ios_9_3_4.c; sourceTree = "<group>"; };
+		2880F3201E015A540045C840 /* target_ipad_3_1_ios_9_3_4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = target_ipad_3_1_ios_9_3_4.h; sourceTree = "<group>"; };
+		2880F3231E015D030045C840 /* target_abstraction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = target_abstraction.h; sourceTree = "<group>"; };
 		43CDFA431DCFA16600046EB0 /* Trident.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trident.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43CDFA471DCFA16600046EB0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		43CDFA491DCFA16600046EB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +61,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2880F3221E015A680045C840 /* targets */ = {
+			isa = PBXGroup;
+			children = (
+				2880F3231E015D030045C840 /* target_abstraction.h */,
+				2880F31A1E014AC80045C840 /* target.h */,
+				2880F3191E014AC80045C840 /* target.c */,
+				2880F31D1E015A1A0045C840 /* target_iphone_5_2_ios_9_2_1.h */,
+				2880F31C1E015A1A0045C840 /* target_iphone_5_2_ios_9_2_1.c */,
+				2880F3201E015A540045C840 /* target_ipad_3_1_ios_9_3_4.h */,
+				2880F31F1E015A540045C840 /* target_ipad_3_1_ios_9_3_4.c */,
+			);
+			name = targets;
+			sourceTree = "<group>";
+		};
 		43CDFA3A1DCFA16600046EB0 = {
 			isa = PBXGroup;
 			children = (
@@ -81,8 +105,9 @@
 				43CDFA541DCFA16600046EB0 /* LaunchScreen.storyboard */,
 				43CDFA571DCFA16600046EB0 /* Info.plist */,
 				43CDFA461DCFA16600046EB0 /* Supporting Files */,
-				43CDFA711DCFA34300046EB0 /* exploit.c */,
 				280E52501DFF78CB00FD3C93 /* exploit.h */,
+				43CDFA711DCFA34300046EB0 /* exploit.c */,
+				2880F3221E015A680045C840 /* targets */,
 			);
 			path = Trident;
 			sourceTree = "<group>";
@@ -196,9 +221,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				43CDFA4E1DCFA16600046EB0 /* ViewController.m in Sources */,
+				2880F3211E015A540045C840 /* target_ipad_3_1_ios_9_3_4.c in Sources */,
+				2880F31E1E015A1A0045C840 /* target_iphone_5_2_ios_9_2_1.c in Sources */,
 				43CDFA4B1DCFA16600046EB0 /* AppDelegate.m in Sources */,
 				43CDFA481DCFA16600046EB0 /* main.m in Sources */,
 				43CDFA721DCFA34300046EB0 /* exploit.c in Sources */,
+				2880F31B1E014AC80045C840 /* target.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
