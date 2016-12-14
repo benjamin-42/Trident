@@ -14,6 +14,6 @@
 #include "target_abstraction.h"
 
 #define TARGET_IPAD_2_4_IOS_9_3_2 (@"9.3.2, iPad2,4")
-void target_ipad2_4_ios_9_3_2_init(target_t *t);
+void target_ipad_2_4_ios_9_3_2_init(target_t *t);
 
 #endif /* target_ipad_2_4_ios_9_3_2_h */

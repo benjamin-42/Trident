@@ -11,8 +11,19 @@
 
 #include "target.h"
 
-#include "target_ipad_3_1_ios_9_3_4.h"
 #include "target_iphone_5_2_ios_9_2_1.h"
+
+#include "target_iphone_4_1_ios_9_3_1.h"
+
+#include "target_iphone_5_2_ios_9_3_2.h"
+#include "target_iphone_5_3_ios_9_3_2.h"
+
+#include "target_ipad_2_1_ios_9_3_2.h"
+#include "target_ipad_2_2_ios_9_3_2.h"
+#include "target_ipad_2_3_ios_9_3_2.h"
+#include "target_ipad_2_4_ios_9_3_2.h"
+
+#include "target_ipad_3_1_ios_9_3_4.h"
 
 uint8_t *t_clock_ops_overwrite;
 uint8_t t_clock_ops_overwrite_size;
@@ -45,10 +56,24 @@ boolean_t target_select(void)
     target_t target;
     
     NSString *info = target_info();
-    if ([info isEqualToString:TARGET_IPAD_3_1_IOS_9_3_4]) {
-        target_ipad_3_1_ios_9_3_4_init(&target);
-    } else if ([info isEqualToString:TARGET_IPHONE_5_2_IOS_9_2_1]) {
-        target_iphone_5_2_ios_9_2_1_init(&target);
+    if ([info isEqualToString:TARGET_IPHONE_5_2_IOS_9_2_1]) {
+		target_iphone_5_2_ios_9_2_1_init(&target);
+	} else if ([info isEqualToString:TARGET_IPHONE_4_1_IOS_9_3_1]) {
+		target_iphone_4_1_ios_9_3_1_init(&target);
+	} else if ([info isEqualToString:TARGET_IPHONE_5_2_IOS_9_3_2]) {
+		target_iphone_5_2_ios_9_3_2_init(&target);
+	} else if ([info isEqualToString:TARGET_IPHONE_5_3_IOS_9_3_2]) {
+		target_iphone_5_3_ios_9_3_2_init(&target);
+	} else if ([info isEqualToString:TARGET_IPAD_2_1_IOS_9_3_2]) {
+		target_ipad_2_1_ios_9_3_2_init(&target);
+	} else if ([info isEqualToString:TARGET_IPAD_2_2_IOS_9_3_2]) {
+		target_ipad_2_2_ios_9_3_2_init(&target);
+	} else if ([info isEqualToString:TARGET_IPAD_2_3_IOS_9_3_2]) {
+		target_ipad_2_3_ios_9_3_2_init(&target);
+	} else if ([info isEqualToString:TARGET_IPAD_2_4_IOS_9_3_2]) {
+		target_ipad_2_4_ios_9_3_2_init(&target);
+	} else if ([info isEqualToString:TARGET_IPAD_3_1_IOS_9_3_4]) {
+		target_ipad_3_1_ios_9_3_4_init(&target);
     } else {
         // unsupported device
         return false;
