@@ -8,7 +8,10 @@
 
 #import "ViewController.h"
 
-#import "exploit.h"
+#include "exploit.h"
+#include "target.h"
+
+NSString *target_info(void);
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *label;
@@ -20,29 +23,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString *version = nil;
-    
-#ifdef TARGET_IPAD_3_1_IOS_9_3_4
-    version = @"9.3.4, iPad3,1";
-#endif
-    
-#ifdef TARGET_IPHONE_5_2_IOS_9_2_1
-    version = @"9.2.1, iPhone5,2";
-#endif
-
-#ifdef TARGET_IPHONE_4_1_IOS_9_3_1
-	version = @"9.3.1, iPhone4,1";
-#endif
-	
-#ifdef TARGET_IPAD_2_X_IOS_9_3_2
-	version = @"9.3.2, iPad2,X";
-#endif
-	
-#ifdef TARGET_IPHONE_52_53_IOS_9_3_2
-	version = @"9.3.2, iPhone5,2/5,3";
-#endif
-	
-    self.label.text = [NSString stringWithFormat:@"by benjamin, for iOS %@", version];
+    if (target_select()) {
+        self.label.text = [NSString stringWithFormat:@"by benjamin, for iOS %@", target_info()];
+    } else {
+        self.label.text = [NSString stringWithFormat:@"by benjamin, unsupported device"];
+        self.button.enabled = NO;
+    }
 }
 
 - (IBAction)start:(id)sender {
