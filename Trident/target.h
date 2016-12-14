@@ -38,6 +38,6 @@ enum {
 
 extern uint32_t *t_check_offsets_pool;
 
-void target_select(void);
+boolean_t target_select(void);
 
 #endif /* target_h */

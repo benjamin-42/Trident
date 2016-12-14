@@ -40,7 +40,7 @@ NSString *target_info(void)
     return [NSString stringWithFormat:@"%@, %@", target_fw(), target_device()];
 }
 
-void target_select(void)
+boolean_t target_select(void)
 {
     target_t target;
     
@@ -49,6 +49,9 @@ void target_select(void)
         target_ipad_3_1_ios_9_3_4_init(&target);
     } else if ([info isEqualToString:TARGET_IPHONE_5_2_IOS_9_2_1]) {
         target_iphone_5_2_ios_9_2_1_init(&target);
+    } else {
+        // unsupported device
+        return false;
     }
     
     t_clock_ops_overwrite = target.clock_ops_overwrite;
@@ -57,4 +60,6 @@ void target_select(void)
     t_uaf_payload_buffer_size = target.uaf_payload_buffer_size;
     t_addresses_pool = target.addresses_pool;
     t_check_offsets_pool = target.check_offsets_pool;
+    
+    return true;
 }

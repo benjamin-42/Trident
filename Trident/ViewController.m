@@ -23,8 +23,12 @@ NSString *target_info(void);
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    target_select();
-    self.label.text = [NSString stringWithFormat:@"by benjamin, for iOS %@", target_info()];
+    if (target_select()) {
+        self.label.text = [NSString stringWithFormat:@"by benjamin, for iOS %@", target_info()];
+    } else {
+        self.label.text = [NSString stringWithFormat:@"by benjamin, unsupported device"];
+        self.button.enabled = NO;
+    }
 }
 
 - (IBAction)start:(id)sender {
