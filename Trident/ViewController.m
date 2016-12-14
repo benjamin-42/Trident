@@ -8,11 +8,13 @@
 
 #import "ViewController.h"
 
-void initialize(void);
-uint32_t leak_kernel_base(void);
-void exploit(uint32_t);
+#include "exploit.h"
+#include "target.h"
+
+NSString *target_info(void);
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *label;
 @property (weak, nonatomic) IBOutlet UIButton *button;
 @end
 
@@ -20,12 +22,13 @@ void exploit(uint32_t);
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    if (target_select()) {
+        self.label.text = [NSString stringWithFormat:@"by benjamin, for iOS %@", target_info()];
+    } else {
+        self.label.text = [NSString stringWithFormat:@"by benjamin, unsupported device"];
+        self.button.enabled = NO;
+    }
 }
 
 - (IBAction)start:(id)sender {
