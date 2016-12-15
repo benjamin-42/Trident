@@ -14,15 +14,5 @@ profile
 *.moved-aside
 DerivedData
 *.hmap
-GNSHS.xccheckout
 build/*
 *.sublime-workspace
-
-# Android Studio
-Android/.gradle
-Android/local.properties
-Android/.idea/workspace.xml
-Android/.idea/libraries
-Android/build
-Android/captures
-*.apk
