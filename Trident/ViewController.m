@@ -8,27 +8,44 @@
 
 #import "ViewController.h"
 
-#include "exploit.h"
-#include "target.h"
+#include <sys/utsname.h>
+#include "offsetfinder.h"
 
-NSString *target_info(void);
+void initialize(void);
+uint32_t leak_kernel_base(void);
+void exploit(uint32_t);
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *label;
 @property (weak, nonatomic) IBOutlet UIButton *button;
+@property (weak, nonatomic) IBOutlet UILabel *environmentLabel;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
     
-    if (target_select()) {
-        self.label.text = [NSString stringWithFormat:@"by benjamin, for iOS %@", target_info()];
-    } else {
-        self.label.text = [NSString stringWithFormat:@"by benjamin, unsupported device"];
+    // Initialize environment target.
+    NSString *systemVersion = [[UIDevice currentDevice] systemVersion];
+    struct utsname name;
+    NSString *environment;
+    
+    uname(&name);
+    init_target_environment(name.machine, [systemVersion cStringUsingEncoding:NSUTF8StringEncoding]);
+    
+    // Update interface.
+    environment = [NSString stringWithFormat:@"%s - iOS %@", name.machine, systemVersion];
+    if (target_environment == NotSupported) {
         self.button.enabled = NO;
+        environment = [environment stringByAppendingString:@" (not supported)"];
     }
+    self.environmentLabel.text = environment;
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)start:(id)sender {
