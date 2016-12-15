@@ -271,3 +271,54 @@ uint32_t find_setreuid(void) {
 		default: abort();
 	}
 }
+
+uint32_t find_pid_check(void) {
+	switch (target_environment) {
+		case iPhone52_iOS921: return 0x16;
+		case iPhone41_iOS931: return 0x14;
+		case iPhone41_iOS932: return 0x14;
+		case iPhone52_iOS932: return 0x16;
+		case iPhone53_iOS932: return 0x16;
+		case iPad21_iOS932: return 0x14;
+		case iPad22_iOS932: return 0x14;
+		case iPad23_iOS932: return 0x14;
+		case iPad24_iOS932: return 0x14;
+		case iPad23_iOS933: return 0x14;
+		case iPad31_iOS934: return 0x14;
+		default: abort();
+	}
+}
+
+uint32_t find_posix_check(void) {
+	switch (target_environment) {
+		case iPhone52_iOS921: return 0x3e;
+		case iPhone41_iOS931: return 0x3e;
+		case iPhone41_iOS932: return 0x3e;
+		case iPhone52_iOS932: return 0x3e;
+		case iPhone53_iOS932: return 0x3e;
+		case iPad21_iOS932: return 0x3e;
+		case iPad22_iOS932: return 0x3e;
+		case iPad23_iOS932: return 0x3e;
+		case iPad24_iOS932: return 0x3e;
+		case iPad23_iOS933: return 0x3e;
+		case iPad31_iOS934: return 0x3e;
+		default: abort();
+	}
+}
+
+uint32_t find_mac_proc_check(void) {
+	switch (target_environment) {
+		case iPhone52_iOS921: return 0x1e6;
+		case iPhone41_iOS931: return 0x1e6;
+		case iPhone41_iOS932: return 0x1e6;
+		case iPhone52_iOS932: return 0x1e6;
+		case iPhone53_iOS932: return 0x1e6;
+		case iPad21_iOS932: return 0x1e6;
+		case iPad22_iOS932: return 0x1e6;
+		case iPad23_iOS932: return 0x1e6;
+		case iPad24_iOS932: return 0x1e6;
+		case iPad23_iOS933: return 0x1e6;
+		case iPad31_iOS934: return 0x1e6;
+		default: abort();
+	}
+}

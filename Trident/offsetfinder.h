@@ -73,4 +73,13 @@ uint32_t find_task_for_pid(void);
 // setreuid
 uint32_t find_setreuid(void);
 
+// pid_check_addr offset
+uint32_t find_pid_check(void);
+
+// posix_check_ret_addr offset
+uint32_t find_posix_check(void);
+
+// mac_proc_check_ret_addr offset
+uint32_t find_mac_proc_check(void);
+
 #endif /* offsetfinder_h */
