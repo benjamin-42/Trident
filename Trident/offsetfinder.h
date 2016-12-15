@@ -12,8 +12,20 @@
 #include <stdio.h>
 
 typedef enum {
-    NotSupported,
-    iPad31_iOS934
+	NotSupported,
+	iPhone52_iOS921,
+	iPhone41_iOS931,
+	iPhone41_iOS932,
+	iPhone41_iOS933,
+	iPhone41_iOS934,
+	iPhone52_iOS932,
+	iPhone53_iOS932,
+	iPad21_iOS932,
+	iPad22_iOS932,
+	iPad23_iOS932,
+	iPad24_iOS932,
+	iPad23_iOS933,
+	iPad31_iOS934,
 } t_target_environment;
 
 extern t_target_environment target_environment;
@@ -62,5 +74,14 @@ uint32_t find_task_for_pid(void);
 
 // setreuid
 uint32_t find_setreuid(void);
+
+// pid_check_addr offset
+uint32_t find_pid_check(void);
+
+// posix_check_ret_addr offset
+uint32_t find_posix_check(void);
+
+// mac_proc_check_ret_addr offset
+uint32_t find_mac_proc_check(void);
 
 #endif /* offsetfinder_h */
