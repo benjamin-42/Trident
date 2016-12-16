@@ -13,6 +13,8 @@ iOS 9.3.5 is not supported.
 
 Supported device targets:
 * iPhone5,2 (N42AP), iOS 9.2.1 (Dillon 13D15)
+* iPhone4,1 (N94AP), iOS 9.3 (Eagle 13E233)
+* iPhone4,1 (N94AP), iOS 9.3 (Eagle 13E237)
 * iPhone4,1 (N94AP), iOS 9.3.1 (Eagle 13E238)
 * iPhone4,1 (N94AP), iOS 9.3.2 (Frisco 13F69)
 * iPhone4,1 (N94AP), iOS 9.3.3 (Genoa 13G34)
