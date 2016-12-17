@@ -199,19 +199,19 @@ uint32_t find_write_gadget(void) {
 
 uint32_t find_vm_kernel_addrperm(void) {
 	switch (target_environment) {
-		case iPhone52_iOS921: return 0x455968;
-		case iPhone41_iOS930: return 0x455848;
-		case iPhone41_iOS931: return 0x455848;
-		case iPhone41_iOS932: return 0x455848;
-		case iPhone41_iOS933: return 0x455848;
-		case iPhone41_iOS934: return 0x455848;
-		case iPhone52_iOS932: return 0x45d97c;
-		case iPhone53_iOS932: return 0x45d97c;
-		case iPad21_iOS932: return 0x455848;
-		case iPad22_iOS932: return 0x455848;
-		case iPad23_iOS932: return 0x455848;
-		case iPad24_iOS932: return 0x455848;
-		case iPad23_iOS933: return 0x455848;
+		case iPhone52_iOS921: return 0x455964;
+		case iPhone41_iOS930: return 0x455844;
+		case iPhone41_iOS931: return 0x455844;
+		case iPhone41_iOS932: return 0x455844;
+		case iPhone41_iOS933: return 0x455844;
+		case iPhone41_iOS934: return 0x455844;
+		case iPhone52_iOS932: return 0x45d978;
+		case iPhone53_iOS932: return 0x45d978;
+		case iPad21_iOS932: return 0x455844;
+		case iPad22_iOS932: return 0x455844;
+		case iPad23_iOS932: return 0x455844;
+		case iPad24_iOS932: return 0x455844;
+		case iPad23_iOS933: return 0x455844;
 		case iPad31_iOS934: return 0x455844;
 		default: abort();
 	}
