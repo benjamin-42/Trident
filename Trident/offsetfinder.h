@@ -21,6 +21,7 @@ typedef enum {
 	iPhone41_iOS934,
 	iPhone52_iOS932,
 	iPhone53_iOS932,
+	iPhone53_iOS933,
 	iPad21_iOS932,
 	iPad22_iOS932,
 	iPad23_iOS932,
