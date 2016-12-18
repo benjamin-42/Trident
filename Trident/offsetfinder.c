@@ -38,6 +38,13 @@ void init_target_environment(const char *device_model, const char *system_versio
 	target_environment = info_to_target_environment(device_model, system_version);
 }
 
+uint32_t find_OSString_vtable(void) {
+    switch (target_environment) {
+        case iPad31_iOS934: return 0x3ebe8c;
+        default: abort();
+    }
+}
+
 uint32_t find_OSSerializer_serialize(void) {
 	switch (target_environment) {
 		case iPhone52_iOS921: return 0x317868;

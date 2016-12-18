@@ -35,6 +35,9 @@ extern t_target_environment target_environment;
 // Initializer
 void init_target_environment(const char *device_model, const char *system_version);
 
+// OSString vtable
+uint32_t find_OSString_vtable(void);
+
 // OSSerializer::serialize
 uint32_t find_OSSerializer_serialize(void);
 
