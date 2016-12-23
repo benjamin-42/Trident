@@ -1,11 +1,3 @@
-//
-//  offsetfinder.h
-//  Trident
-//
-//  Created by Benjamin Randazzo on 14/12/2016.
-//  Copyright © 2016 Benjamin Randazzo. All rights reserved.
-//
-
 #ifndef offsetfinder_h
 #define offsetfinder_h
 
@@ -18,6 +10,7 @@ typedef enum {
 	iPhone41_iOS932,
 	iPhone41_iOS933,
 	iPhone41_iOS934,
+	iPhone51_iOS932,
 	iPhone52_iOS932,
 	iPhone53_iOS932,
 	iPad21_iOS932,
@@ -26,6 +19,7 @@ typedef enum {
 	iPad24_iOS932,
 	iPad23_iOS933,
 	iPad31_iOS934,
+    iPad32_iOS931
 } t_target_environment;
 
 extern t_target_environment target_environment;
@@ -83,5 +77,8 @@ uint32_t find_posix_check(void);
 
 // mac_proc_check_ret_addr offset
 uint32_t find_mac_proc_check(void);
+
+// PE_i_can_has_debugger offset
+uint32_t find_PE_i_can_has_debugger(void);
 
 #endif /* offsetfinder_h */
