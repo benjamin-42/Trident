@@ -17,6 +17,7 @@ Supported device targets:
 * iPhone4,1 (N94AP), iOS 9.3.2 (Frisco 13F69)
 * iPhone4,1 (N94AP), iOS 9.3.3 (Genoa 13G34)
 * iPhone4,1 (N94AP), iOS 9.3.4 (Genoa 13G35)
+* iPhone5,1 (N41AP), iOS 9.3.2 (Frisco 13F69)
 * iPhone5,2 (N42AP), iOS 9.3.2 (Frisco 13F69)
 * iPhone5,3 (N48AP), iOS 9.3.2 (Frisco 13F69)
 * iPhone5,3 (N48AP), iOS 9.3.3 (Genoa 13G34)
@@ -26,6 +27,7 @@ Supported device targets:
 * iPad2,4 (K93AAP), iOS 9.3.2 (Frisco 13F69)
 * iPad2,3 (K95AP), iOS 9.3.3 (Genoa 13G34)
 * iPad3,1 (J1AP), iOS 9.3.4 (Genoa 13G35)
+* iPad3,2 (J2AP), iOS 9.3.2 (Eagle 13E238)
 * Want to contribute a device target? [Karen (angelXwind) wrote a tutorial on how to find addresses for Trident.](https://angelxwind.net/?page/trident-address-tutorial)
 
 References:
