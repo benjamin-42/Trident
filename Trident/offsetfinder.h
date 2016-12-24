@@ -19,7 +19,7 @@ typedef enum {
 	iPad24_iOS932,
 	iPad23_iOS933,
 	iPad31_iOS934,
-    iPad32_iOS931
+    	iPad32_iOS931
 } t_target_environment;
 
 extern t_target_environment target_environment;
@@ -77,8 +77,5 @@ uint32_t find_posix_check(void);
 
 // mac_proc_check_ret_addr offset
 uint32_t find_mac_proc_check(void);
-
-// PE_i_can_has_debugger offset
-uint32_t find_PE_i_can_has_debugger(void);
 
 #endif /* offsetfinder_h */
