@@ -19,6 +19,7 @@ typedef enum {
 	iPhone41_iOS932,
 	iPhone41_iOS933,
 	iPhone41_iOS934,
+	iPhone51_iOS932,
 	iPhone52_iOS932,
 	iPhone53_iOS932,
 	iPhone53_iOS933,
@@ -28,7 +29,8 @@ typedef enum {
 	iPad24_iOS932,
 	iPad23_iOS933,
 	iPad31_iOS934,
-	iPod51_iOS932,
+    iPad32_iOS931,
+	iPod51_iOS932
 } t_target_environment;
 
 extern t_target_environment target_environment;
