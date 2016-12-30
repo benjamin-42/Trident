@@ -25,6 +25,7 @@ Supported devices:
 * iPhone5,3 (N48AP), iOS 9.3.2 (Frisco 13F69)
 * iPhone5,3 (N48AP), iOS 9.3.3 (Genoa 13G34)
 * iPad2,1 (K93AP), iOS 9.3.2 (Frisco 13F69)
+* iPad2,1 (K93AP), iOS 9.3.3 (Genoa 13G34)
 * iPad2,2 (K94AP), iOS 9.3.2 (Frisco 13F69)
 * iPad2,3 (K95AP), iOS 9.3.2 (Frisco 13F69)
 * iPad2,3 (K95AP), iOS 9.3.3 (Genoa 13G34)
