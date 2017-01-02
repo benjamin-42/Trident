@@ -66,7 +66,6 @@ uint32_t find_OSSerializer_serialize(void) {
 		case iPad31_iOS934: return 0x318388;
 		case iPad32_iOS931: return 0x31812c;
 		case iPad33_iOS933: return 0x318388;
-		case iPad32_iOS931: return 0x31812c;
 		case iPod51_iOS932: return 0x318264;
 		default: abort();
 	}
@@ -387,7 +386,7 @@ uint32_t find_task_for_pid(void) {
 		case iPad23_iOS932: return 0x2fcd80;
 		case iPad24_iOS932: return 0x2fcd80;
 		case iPad23_iOS933: return 0x2fcec0;
-		case iPad31_iOS934: return 0x2fcec0
+        case iPad31_iOS934: return 0x2fcec0;
 		case iPad32_iOS931: return 0x2fcc8c;
 		case iPad33_iOS933: return 0x2fcec0;
 		case iPod51_iOS932: return 0x2fcd80;
