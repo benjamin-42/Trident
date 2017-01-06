@@ -26,6 +26,7 @@ t_target_environment info_to_target_environment(const char *device_model, const 
 	determineTarget("iPhone5,2", "9.3.2", iPhone52_iOS932);
 	determineTarget("iPhone5,3", "9.3.2", iPhone53_iOS932);
 	determineTarget("iPhone5,3", "9.3.3", iPhone53_iOS933);
+	determineTarget("iPad2,1", "9.3", iPad21_iOS930);
 	determineTarget("iPad2,1", "9.3.1", iPad21_iOS931);
 	determineTarget("iPad2,1", "9.3.2", iPad21_iOS932);
 	determineTarget("iPad2,1", "9.3.3", iPad21_iOS933);
@@ -56,6 +57,7 @@ uint32_t find_OSSerializer_serialize(void) {
 		case iPhone52_iOS932: return 0x31ef58;
 		case iPhone53_iOS932: return 0x31ef58;
 		case iPhone53_iOS933: return 0x31f13c;
+		case iPad21_iOS930: return 0x31812c;
 		case iPad21_iOS931: return 0x31812c;
 		case iPad21_iOS932: return 0x318264;
 		case iPad21_iOS933: return 0x318388;
@@ -83,6 +85,7 @@ uint32_t find_OSSymbol_getMetaClass(void) {
 		case iPhone52_iOS932: return 0x322818;
 		case iPhone53_iOS932: return 0x322818;
 		case iPhone53_iOS933: return 0x3219fc;
+		case iPad21_iOS930: return 0x31a934;
 		case iPad21_iOS931: return 0x31a934;
 		case iPad21_iOS932: return 0x31aa6c;
 		case iPad21_iOS933: return 0x31ab90;
@@ -110,6 +113,7 @@ uint32_t find_calend_gettime(void) {
 		case iPhone52_iOS932: return 0x1e170;
 		case iPhone53_iOS932: return 0x1e170;
 		case iPhone53_iOS933: return 0x1eeac;
+		case iPad21_iOS930: return 0x1e170;
 		case iPad21_iOS931: return 0x1e170;
 		case iPad21_iOS932: return 0x1e170;
 		case iPad21_iOS933: return 0x1e200;
@@ -137,6 +141,7 @@ uint32_t find_bufattr_cpx(void) {
 		case iPhone52_iOS932: return 0xdee6c;
 		case iPhone53_iOS932: return 0xdee6c;
 		case iPhone53_iOS933: return 0xdea48;
+		case iPad21_iOS930: return 0xd9848;
 		case iPad21_iOS931: return 0xd9848;
 		case iPad21_iOS932: return 0xd9848;
 		case iPad21_iOS933: return 0xd9838;
@@ -164,6 +169,7 @@ uint32_t find_clock_ops(void) {
 		case iPhone52_iOS932: return 0x40b428;
 		case iPhone53_iOS932: return 0x40b428;
 		case iPhone53_iOS933: return 0x40b428;
+		case iPad21_iOS930: return 0x403428;
 		case iPad21_iOS931: return 0x403428;
 		case iPad21_iOS932: return 0x403428;
 		case iPad21_iOS933: return 0x403428;
@@ -191,6 +197,7 @@ uint32_t find_copyin(void) {
 		case iPhone52_iOS932: return 0xcb7dc;
 		case iPhone53_iOS932: return 0xcb7dc;
 		case iPhone53_iOS933: return 0xcb7dc;
+		case iPad21_iOS930: return 0xc76b4;
 		case iPad21_iOS931: return 0xc76b4;
 		case iPad21_iOS932: return 0xc76b4;
 		case iPad21_iOS933: return 0xc76b4;
@@ -218,6 +225,7 @@ uint32_t find_bx_lr(void) {
 		case iPhone52_iOS932: return 0xdea4a;
 		case iPhone53_iOS932: return 0xdea4a;
 		case iPhone53_iOS933: return 0xdea4a;
+		case iPad21_iOS930: return 0xd984a;
 		case iPad21_iOS931: return 0xd984a;
 		case iPad21_iOS932: return 0xd984a;
 		case iPad21_iOS933: return 0xd983a;
@@ -245,6 +253,7 @@ uint32_t find_write_gadget(void) {
 		case iPhone52_iOS932: return 0xcb508;
 		case iPhone53_iOS932: return 0xcb508;
 		case iPhone53_iOS933: return 0xcb508;
+		case iPad21_iOS930: return 0xc73e8;
 		case iPad21_iOS931: return 0xc73e8;
 		case iPad21_iOS932: return 0xc73e8;
 		case iPad21_iOS933: return 0xc73e8;
@@ -271,6 +280,7 @@ uint32_t find_vm_kernel_addrperm(void) {
 		case iPhone52_iOS932: return 0x45d978;
 		case iPhone53_iOS932: return 0x45d978;
 		case iPhone53_iOS933: return 0x45d978;
+		case iPad21_iOS930: return 0x455844;
 		case iPad21_iOS931: return 0x455844;
 		case iPad21_iOS932: return 0x455844;
 		case iPad21_iOS933: return 0x455844;
@@ -298,6 +308,7 @@ uint32_t find_kernel_pmap(void) {
 		case iPhone52_iOS932: return 0x3fe454;
 		case iPhone53_iOS932: return 0x3fe454;
 		case iPhone53_iOS933: return 0x3fe454;
+		case iPad21_iOS930: return 0x3f6454;
 		case iPad21_iOS931: return 0x3f6454;
 		case iPad21_iOS932: return 0x3f6454;
 		case iPad21_iOS933: return 0x3f6454;
@@ -325,6 +336,7 @@ uint32_t find_flush_dcache(void) {
 		case iPhone52_iOS932: return 0xbf274;
 		case iPhone53_iOS932: return 0xbf274;
 		case iPhone53_iOS933: return 0xbf404;
+		case iPad21_iOS930: return 0xbc250;
 		case iPad21_iOS931: return 0xbc250;
 		case iPad21_iOS932: return 0xbc260;
 		case iPad21_iOS933: return 0xbc1d4;
@@ -352,6 +364,7 @@ uint32_t find_invalidate_tlb(void) {
 		case iPhone52_iOS932: return 0xcb560;
 		case iPhone53_iOS932: return 0xcb560;
 		case iPhone53_iOS933: return 0xcb560;
+		case iPad21_iOS930: return 0xc7440;
 		case iPad21_iOS931: return 0xc7440;
 		case iPad21_iOS932: return 0xc7440;
 		case iPad21_iOS933: return 0xc7440;
@@ -379,6 +392,7 @@ uint32_t find_task_for_pid(void) {
 		case iPhone52_iOS932: return 0x302df0;
 		case iPhone53_iOS932: return 0x302df0;
 		case iPhone53_iOS933: return 0x302fd4;
+		case iPad21_iOS930: return 0x2fcc8c;
 		case iPad21_iOS931: return 0x2fcc8c;
 		case iPad21_iOS932: return 0x2fcd80;
 		case iPad21_iOS933: return 0x2fcec0;
@@ -405,6 +419,7 @@ uint32_t find_setreuid(void) {
 		case iPhone52_iOS932: return 0x2af5f8;
 		case iPhone53_iOS932: return 0x2af5f8;
 		case iPhone53_iOS933: return 0x2af7b8;
+		case iPad21_iOS930: return 0x2a977c;
 		case iPad21_iOS931: return 0x2a977c;
 		case iPad21_iOS932: return 0x2a985c;
 		case iPad21_iOS933: return 0x2a9988;
@@ -431,6 +446,7 @@ uint32_t find_pid_check(void) {
 		case iPhone52_iOS932: return 0x16;
 		case iPhone53_iOS932: return 0x16;
 		case iPhone53_iOS933: return 0x16;
+		case iPad21_iOS930: return 0x14;
 		case iPad21_iOS931: return 0x14;
 		case iPad21_iOS932: return 0x14;
 		case iPad21_iOS933: return 0x14;
@@ -457,6 +473,7 @@ uint32_t find_posix_check(void) {
 		case iPhone52_iOS932: return 0x3e;
 		case iPhone53_iOS932: return 0x3e;
 		case iPhone53_iOS933: return 0x3e;
+		case iPad21_iOS930: return 0x3e;
 		case iPad21_iOS931: return 0x3e;
 		case iPad21_iOS932: return 0x3e;
 		case iPad21_iOS933: return 0x3e;
@@ -483,6 +500,7 @@ uint32_t find_mac_proc_check(void) {
 		case iPhone52_iOS932: return 0x1e6;
 		case iPhone53_iOS932: return 0x1e6;
 		case iPhone53_iOS933: return 0x1e6;
+		case iPad21_iOS930: return 0x1e6;
 		case iPad21_iOS931: return 0x1e6;
 		case iPad21_iOS932: return 0x1e6;
 		case iPad21_iOS933: return 0x1e6;
