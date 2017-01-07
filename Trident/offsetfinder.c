@@ -32,6 +32,7 @@ t_target_environment info_to_target_environment(const char *device_model, const 
 	determineTarget("iPad2,1", "9.3.3", iPad21_iOS933);
 	determineTarget("iPad2,1", "9.3.4", iPad21_iOS934);
 	determineTarget("iPad2,2", "9.3.2", iPad22_iOS932);
+	determineTarget("iPad2,2", "9.3.3", iPad22_iOS933);
 	determineTarget("iPad2,3", "9.3.2", iPad23_iOS932);
 	determineTarget("iPad2,4", "9.3.2", iPad24_iOS932);
 	determineTarget("iPad2,3", "9.3.3", iPad23_iOS933);
@@ -64,6 +65,7 @@ uint32_t find_OSSerializer_serialize(void) {
 		case iPad21_iOS933: return 0x318388;
 		case iPad21_iOS934: return 0x318388;
 		case iPad22_iOS932: return 0x318264;
+		case iPad22_iOS933: return 0x318388;
 		case iPad23_iOS932: return 0x318264;
 		case iPad24_iOS932: return 0x318264;
 		case iPad23_iOS933: return 0x318388;
@@ -93,6 +95,7 @@ uint32_t find_OSSymbol_getMetaClass(void) {
 		case iPad21_iOS933: return 0x31ab90;
 		case iPad21_iOS934: return 0x31ab90;
 		case iPad22_iOS932: return 0x31aa6c;
+		case iPad22_iOS933: return 0x31ab90;
 		case iPad23_iOS932: return 0x31aa6c;
 		case iPad24_iOS932: return 0x31aa6c;
 		case iPad23_iOS933: return 0x31ab90;
@@ -122,6 +125,7 @@ uint32_t find_calend_gettime(void) {
 		case iPad21_iOS933: return 0x1e200;
 		case iPad21_iOS934: return 0x1e200;
 		case iPad22_iOS932: return 0x1e170;
+		case iPad22_iOS933: return 0x1e200;
 		case iPad23_iOS932: return 0x1e170;
 		case iPad24_iOS932: return 0x1e170;
 		case iPad23_iOS933: return 0x1e200;
@@ -151,6 +155,7 @@ uint32_t find_bufattr_cpx(void) {
 		case iPad21_iOS933: return 0xd9838;
 		case iPad21_iOS934: return 0xd9838;
 		case iPad22_iOS932: return 0xd9848;
+		case iPad22_iOS933: return 0xd9838;
 		case iPad23_iOS932: return 0xd9848;
 		case iPad24_iOS932: return 0xd9848;
 		case iPad23_iOS933: return 0xd9838;
@@ -180,6 +185,7 @@ uint32_t find_clock_ops(void) {
 		case iPad21_iOS933: return 0x403428;
 		case iPad21_iOS934: return 0x403428;
 		case iPad22_iOS932: return 0x403428;
+		case iPad22_iOS933: return 0x403428;
 		case iPad23_iOS932: return 0x403428;
 		case iPad24_iOS932: return 0x403428;
 		case iPad23_iOS933: return 0x403428;
@@ -209,6 +215,7 @@ uint32_t find_copyin(void) {
 		case iPad21_iOS933: return 0xc76b4;
 		case iPad21_iOS934: return 0xc76b4;
 		case iPad22_iOS932: return 0xc76b4;
+		case iPad22_iOS933: return 0xc76b4;
 		case iPad23_iOS932: return 0xc76b4;
 		case iPad24_iOS932: return 0xc76b4;
 		case iPad23_iOS933: return 0xc76b4;
@@ -238,6 +245,7 @@ uint32_t find_bx_lr(void) {
 		case iPad21_iOS933: return 0xd983a;
 		case iPad21_iOS934: return 0xd983a;
 		case iPad22_iOS932: return 0xd984a;
+		case iPad22_iOS933: return 0xd983a;
 		case iPad23_iOS932: return 0xd984a;
 		case iPad24_iOS932: return 0xd984a;
 		case iPad23_iOS933: return 0xd983a;
@@ -267,6 +275,7 @@ uint32_t find_write_gadget(void) {
 		case iPad21_iOS933: return 0xc73e8;
 		case iPad21_iOS934: return 0xc73e8;
 		case iPad22_iOS932: return 0xc73e8;
+		case iPad22_iOS933: return 0xc73e8;
 		case iPad23_iOS932: return 0xc73e8;
 		case iPad24_iOS932: return 0xc73e8;
 		case iPad23_iOS933: return 0xc73e8;
@@ -295,6 +304,7 @@ uint32_t find_vm_kernel_addrperm(void) {
 		case iPad21_iOS933: return 0x455844;
 		case iPad21_iOS934: return 0x455844;
 		case iPad22_iOS932: return 0x455844;
+		case iPad22_iOS933: return 0x455844;
 		case iPad23_iOS932: return 0x455844;
 		case iPad24_iOS932: return 0x455844;
 		case iPad23_iOS933: return 0x455844;
@@ -324,6 +334,7 @@ uint32_t find_kernel_pmap(void) {
 		case iPad21_iOS933: return 0x3f6454;
 		case iPad21_iOS934: return 0x3f6454;
 		case iPad22_iOS932: return 0x3f6454;
+		case iPad22_iOS933: return 0x3f6454;
 		case iPad23_iOS932: return 0x3f6454;
 		case iPad24_iOS932: return 0x3f6454;
 		case iPad23_iOS933: return 0x3f6454;
@@ -353,6 +364,7 @@ uint32_t find_flush_dcache(void) {
 		case iPad21_iOS933: return 0xbc1d4;
 		case iPad21_iOS934: return 0xbc1d4;
 		case iPad22_iOS932: return 0xbc260;
+		case iPad22_iOS933: return 0xbc1d4;
 		case iPad23_iOS932: return 0xbc260;
 		case iPad24_iOS932: return 0xbc260;
 		case iPad23_iOS933: return 0xbc1d8;
@@ -382,6 +394,7 @@ uint32_t find_invalidate_tlb(void) {
 		case iPad21_iOS933: return 0xc7440;
 		case iPad21_iOS934: return 0xc7440;
 		case iPad22_iOS932: return 0xc7440;
+		case iPad22_iOS933: return 0xc7440;
 		case iPad23_iOS932: return 0xc7440;
 		case iPad24_iOS932: return 0xc7440;
 		case iPad23_iOS933: return 0xc7450;
@@ -411,6 +424,7 @@ uint32_t find_task_for_pid(void) {
 		case iPad21_iOS933: return 0x2fcec0;
 		case iPad21_iOS934: return 0x2fcec0;
 		case iPad22_iOS932: return 0x2fcd80;
+		case iPad22_iOS933: return 0x2fcec0;
 		case iPad23_iOS932: return 0x2fcd80;
 		case iPad24_iOS932: return 0x2fcd80;
 		case iPad23_iOS933: return 0x2fcec0;
@@ -439,6 +453,7 @@ uint32_t find_setreuid(void) {
 		case iPad21_iOS933: return 0x2a9988;
 		case iPad21_iOS934: return 0x2a9988;
 		case iPad22_iOS932: return 0x2a985c;
+		case iPad22_iOS933: return 0x2a9988;
 		case iPad23_iOS932: return 0x2a985c;
 		case iPad24_iOS932: return 0x2a985c;
 		case iPad23_iOS933: return 0x2a9988;
@@ -467,6 +482,7 @@ uint32_t find_pid_check(void) {
 		case iPad21_iOS933: return 0x14;
 		case iPad21_iOS934: return 0x14;
 		case iPad22_iOS932: return 0x14;
+		case iPad22_iOS933: return 0x14;
 		case iPad23_iOS932: return 0x14;
 		case iPad24_iOS932: return 0x14;
 		case iPad23_iOS933: return 0x14;
@@ -495,6 +511,7 @@ uint32_t find_posix_check(void) {
 		case iPad21_iOS933: return 0x3e;
 		case iPad21_iOS934: return 0x3e;
 		case iPad22_iOS932: return 0x3e;
+		case iPad22_iOS933: return 0x3e;
 		case iPad23_iOS932: return 0x3e;
 		case iPad24_iOS932: return 0x3e;
 		case iPad23_iOS933: return 0x3e;
@@ -523,6 +540,7 @@ uint32_t find_mac_proc_check(void) {
 		case iPad21_iOS933: return 0x1e6;
 		case iPad21_iOS934: return 0x1e6;
 		case iPad22_iOS932: return 0x1e6;
+		case iPad22_iOS933: return 0x1e6;
 		case iPad23_iOS932: return 0x1e6;
 		case iPad24_iOS932: return 0x1e6;
 		case iPad23_iOS933: return 0x1e6;
