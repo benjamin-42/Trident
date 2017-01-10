@@ -13,21 +13,35 @@
 
 typedef enum {
 	NotSupported,
+	iPhone52_iOS920,
 	iPhone52_iOS921,
+	iPhone41_iOS921,
 	iPhone41_iOS930,
 	iPhone41_iOS931,
 	iPhone41_iOS932,
 	iPhone41_iOS933,
 	iPhone41_iOS934,
+	iPhone51_iOS932,
 	iPhone52_iOS932,
 	iPhone53_iOS932,
 	iPhone53_iOS933,
+    	iPad21_iOS920,
+	iPad21_iOS930,
+	iPad21_iOS931,
 	iPad21_iOS932,
+	iPad21_iOS933,
+	iPad21_iOS934,
+	iPad22_iOS930,
+	iPad22_iOS931,
 	iPad22_iOS932,
+	iPad22_iOS933,
 	iPad23_iOS932,
 	iPad24_iOS932,
 	iPad23_iOS933,
 	iPad31_iOS934,
+	iPad32_iOS931,
+	iPad33_iOS933,
+	iPod51_iOS932
 } t_target_environment;
 
 extern t_target_environment target_environment;
