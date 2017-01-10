@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		437AE36C1E01CC7600FA5A89 /* offsetfinder.c in Sources */ = {isa = PBXBuildFile; fileRef = 437AE36A1E01CC7600FA5A89 /* offsetfinder.c */; };
 		43CDFA481DCFA16600046EB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CDFA471DCFA16600046EB0 /* main.m */; };
 		43CDFA4B1DCFA16600046EB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CDFA4A1DCFA16600046EB0 /* AppDelegate.m */; };
 		43CDFA4E1DCFA16600046EB0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CDFA4D1DCFA16600046EB0 /* ViewController.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		437AE36A1E01CC7600FA5A89 /* offsetfinder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = offsetfinder.c; sourceTree = "<group>"; };
+		437AE36B1E01CC7600FA5A89 /* offsetfinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = offsetfinder.h; sourceTree = "<group>"; };
 		43CDFA431DCFA16600046EB0 /* Trident.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trident.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43CDFA471DCFA16600046EB0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		43CDFA491DCFA16600046EB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -81,6 +84,8 @@
 				43CDFA571DCFA16600046EB0 /* Info.plist */,
 				43CDFA461DCFA16600046EB0 /* Supporting Files */,
 				43CDFA711DCFA34300046EB0 /* exploit.c */,
+				437AE36A1E01CC7600FA5A89 /* offsetfinder.c */,
+				437AE36B1E01CC7600FA5A89 /* offsetfinder.h */,
 			);
 			path = Trident;
 			sourceTree = "<group>";
@@ -153,7 +158,7 @@
 				TargetAttributes = {
 					43CDFA421DCFA16600046EB0 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 4P3PNUDM94;
+						DevelopmentTeam = 8L4FKV35YW;
 					};
 				};
 			};
@@ -196,6 +201,7 @@
 				43CDFA4E1DCFA16600046EB0 /* ViewController.m in Sources */,
 				43CDFA4B1DCFA16600046EB0 /* AppDelegate.m in Sources */,
 				43CDFA481DCFA16600046EB0 /* main.m in Sources */,
+				437AE36C1E01CC7600FA5A89 /* offsetfinder.c in Sources */,
 				43CDFA721DCFA34300046EB0 /* exploit.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,7 +322,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4P3PNUDM94;
+				DEVELOPMENT_TEAM = 8L4FKV35YW;
 				INFOPLIST_FILE = Trident/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_CFLAGS = "-fno-stack-protector";
@@ -333,7 +339,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4P3PNUDM94;
+				DEVELOPMENT_TEAM = 8L4FKV35YW;
 				INFOPLIST_FILE = Trident/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_CFLAGS = "-fno-stack-protector";
