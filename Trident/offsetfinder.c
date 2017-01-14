@@ -724,6 +724,8 @@ uint32_t find_setreuid(void) {
 		case iPhone41_iOS932: return 0x2a985c;
 		case iPhone41_iOS933: return 0x2a9988;
 		case iPhone41_iOS934: return 0x2a9988;
+		case iPhone52_iOS920: return 0x2a9e24;
+		case iPhone52_iOS921: return 0x2a9f34;
 		case iPhone52_iOS932: return 0x2af5f8;
 		case iPhone53_iOS921: return 0x2a9f34;
 		case iPhone53_iOS932: return 0x2af5f8;
