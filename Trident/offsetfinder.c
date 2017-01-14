@@ -35,7 +35,7 @@ t_target_environment info_to_target_environment(const char *device_model, const 
 	determineTarget("iPad2,1", "9.3.3", iPad21_iOS933);
 	determineTarget("iPad2,1", "9.3.4", iPad21_iOS934);
 	determineTarget("iPad2,2", "9.2", iPad22_iOS920);
-	determineTarget("iPad2,2", "9.2.1" iPad22_iOS921);
+	determineTarget("iPad2,2", "9.2.1", iPad22_iOS921);
 	determineTarget("iPad2,2", "9.3", iPad22_iOS930);
 	determineTarget("iPad2,2", "9.3.1", iPad22_iOS931);
 	determineTarget("iPad2,2", "9.3.2", iPad22_iOS932);
