@@ -33,6 +33,7 @@ Supported devices:
 * iPad2,1 (K93AP), iOS 9.3.2 (Frisco 13F69)
 * iPad2,1 (K93AP), iOS 9.3.3 (Genoa 13G34)
 * iPad2,1 (K93AP), iOS 9.3.4 (Genoa 13G35)
+* iPad2,2 (K94AP), iOS 9.2 (Castlerock 13C75)
 * iPad2,2 (K94AP), iOS 9.3 (Eagle 13E233)
 * iPad2,2 (K94AP), iOS 9.3 (Eagle 13E237)
 * iPad2,2 (K94AP), iOS 9.3.1 (Eagle 13E238)
