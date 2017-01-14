@@ -13,8 +13,6 @@
 
 typedef enum {
 	NotSupported,
-	iPhone52_iOS920,
-	iPhone52_iOS921,
 	iPhone41_iOS921,
 	iPhone41_iOS930,
 	iPhone41_iOS931,
@@ -22,10 +20,13 @@ typedef enum {
 	iPhone41_iOS933,
 	iPhone41_iOS934,
 	iPhone51_iOS932,
+	iPhone52_iOS920,
+	iPhone52_iOS921,
 	iPhone52_iOS932,
+	iPhone53_iOS921,
 	iPhone53_iOS932,
 	iPhone53_iOS933,
-    	iPad21_iOS920,
+  iPad21_iOS920,
 	iPad21_iOS921,
 	iPad21_iOS930,
 	iPad21_iOS931,
