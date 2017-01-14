@@ -22,6 +22,7 @@ Supported devices:
 * iPhone5,2 (N42AP), iOS 9.2 (Castlerock 13C75)
 * iPhone5,2 (N42AP), iOS 9.2.1 (Dillon 13D15)
 * iPhone5,2 (N42AP), iOS 9.3.2 (Frisco 13F69)
+* iPhone5,3 (N48AP), iOS 9.2.1 (Dillon 13D15)
 * iPhone5,3 (N48AP), iOS 9.3.2 (Frisco 13F69)
 * iPhone5,3 (N48AP), iOS 9.3.3 (Genoa 13G34)
 * iPad2,1 (K39AP), iOS 9.2 (Castlerock 13C75)
