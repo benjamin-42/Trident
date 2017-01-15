@@ -93,6 +93,7 @@ uint32_t find_OSSerializer_serialize(void) {
 		case iPad21_iOS932: return 0x318264;
 		case iPad21_iOS933: return 0x318388;
 		case iPad21_iOS934: return 0x318388;
+		case iPad22_iOS910: return 0x319450;
 		case iPad22_iOS920: return 0x3106fc;
 		case iPad22_iOS921: return 0x3107fc;
 		case iPad22_iOS930: return 0x31812c;
@@ -100,6 +101,7 @@ uint32_t find_OSSerializer_serialize(void) {
 		case iPad22_iOS932: return 0x318264;
 		case iPad22_iOS933: return 0x318388;
 		case iPad22_iOS934: return 0x318388;
+		case iPad23_iOS910: return 0x319450;
 		case iPad23_iOS920: return 0x3106fc;
 		case iPad23_iOS921: return 0x3107fc;
 		case iPad23_iOS930: return 0x31812c;
@@ -107,6 +109,7 @@ uint32_t find_OSSerializer_serialize(void) {
 		case iPad23_iOS932: return 0x318264;
 		case iPad23_iOS933: return 0x318388;
 		case iPad23_iOS934: return 0x318388;
+		case iPad24_iOS910: return 0x319450;
 		case iPad24_iOS920: return 0x3106fc;
 		case iPad24_iOS921: return 0x3107fc;
 		case iPad24_iOS930: return 0x31812c;
