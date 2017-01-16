@@ -16,9 +16,9 @@
 t_target_environment target_environment = NotSupported;
 
 t_target_environment info_to_target_environment(const char *device_model, const char *system_version) {
-	determineTarget("iPhone4,1", "9.3", iPhone41_iOS930);
 	determineTarget("iPhone4,1", "9.2", iPhone41_iOS920);
 	determineTarget("iPhone4,1", "9.2.1", iPhone41_iOS921);
+	determineTarget("iPhone4,1", "9.3", iPhone41_iOS930);
 	determineTarget("iPhone4,1", "9.3.1", iPhone41_iOS931);
 	determineTarget("iPhone4,1", "9.3.2", iPhone41_iOS932);
 	determineTarget("iPhone4,1", "9.3.3", iPhone41_iOS933);
