@@ -138,7 +138,7 @@ uint32_t find_OSSymbol_getMetaClass(void) {
         case iPhone52_iOS920: return 0x319ea0;
         case iPhone52_iOS921: return 0x319fa0;
         case iPhone52_iOS932: return 0x322818;
-        case iPhone53_iOS921: return 0x3176e4;
+        case iPhone53_iOS921: return 0x319fa0;
         case iPhone53_iOS932: return 0x322818;
         case iPhone53_iOS933: return 0x3219fc;
         case iPhone54_iOS932: return 0x321818;
