@@ -786,6 +786,61 @@ uint32_t find_task_for_pid(void) {
 	}
 }
 
+ushort find_new_branch(void) {
+	switch (target_environment) {
+		case iPhone41_iOS921: return 0xe031;
+		case iPhone41_iOS930: return 0xe031;
+		case iPhone41_iOS931: return 0xe031;
+		case iPhone41_iOS932: return 0xe031;
+		case iPhone41_iOS933: return 0xe031;
+		case iPhone41_iOS934: return 0xe031;
+		case iPhone52_iOS920: return 0xe031;
+		case iPhone52_iOS921: return 0xe031;
+		case iPhone52_iOS932: return 0xe031;
+		case iPhone53_iOS921: return 0xe031;
+		case iPhone53_iOS932: return 0xe031;
+		case iPhone53_iOS933: return 0xe031;
+		case iPhone54_iOS932: return 0xe031;
+		case iPad21_iOS910: return 0xe031;
+		case iPad21_iOS920: return 0xe031;
+		case iPad21_iOS921: return 0xe031;
+		case iPad21_iOS930: return 0xe031;
+		case iPad21_iOS931: return 0xe031;
+		case iPad21_iOS932: return 0xe031;
+		case iPad21_iOS933: return 0xe031;
+		case iPad21_iOS934: return 0xe031;
+		case iPad22_iOS910: return 0xe031;
+		case iPad22_iOS920: return 0xe031;
+		case iPad22_iOS921: return 0xe031;
+		case iPad22_iOS930: return 0xe031;
+		case iPad22_iOS931: return 0xe031;
+		case iPad22_iOS932: return 0xe031;
+		case iPad22_iOS933: return 0xe031;
+		case iPad22_iOS934: return 0xe031;
+		case iPad23_iOS910: return 0xe031;
+		case iPad23_iOS920: return 0xe031;
+		case iPad23_iOS921: return 0xe031;
+		case iPad23_iOS930: return 0xe031;
+		case iPad23_iOS931: return 0xe031;
+		case iPad23_iOS932: return 0xe031;
+		case iPad23_iOS933: return 0xe031;
+		case iPad23_iOS934: return 0xe031;
+		case iPad24_iOS910: return 0xe031;
+		case iPad24_iOS920: return 0xe031;
+		case iPad24_iOS921: return 0xe031;
+		case iPad24_iOS930: return 0xe031;
+		case iPad24_iOS931: return 0xe031;
+		case iPad24_iOS932: return 0xe031;
+		case iPad24_iOS933: return 0xe031;
+		case iPad24_iOS934: return 0xe031;
+		case iPad31_iOS934: return 0xe031;
+		case iPad32_iOS931: return 0xe031;
+		case iPad33_iOS933: return 0xe031;
+		case iPod51_iOS932: return 0xe031;
+        	default: abort();
+	}
+}
+
 uint32_t find_setreuid(void) {
 	switch (target_environment) {
         case iPhone41_iOS921: return 0x2a3bc4;
