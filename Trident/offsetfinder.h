@@ -108,6 +108,9 @@ uint32_t find_invalidate_tlb(void);
 // task_for_pid
 uint32_t find_task_for_pid(void);
 
+// new_branch
+ushort find_new_branch(void);
+
 // setreuid
 uint32_t find_setreuid(void);
 
