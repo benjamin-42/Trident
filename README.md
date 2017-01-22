@@ -13,6 +13,7 @@ At this point it would be possible to jailbreak the device by applying more patc
 iOS 9.3.5 is not supported as vulnerabilities have been patched in that version.
 
 Supported devices:
+* iPhone4,1 (N94AP), iOS 9.2 (Castlerock 13C75)
 * iPhone4,1 (N94AP), iOS 9.2.1 (Dillon 13D15)
 * iPhone4,1 (N94AP), iOS 9.3 (Eagle 13E233)
 * iPhone4,1 (N94AP), iOS 9.3 (Eagle 13E237)
