@@ -13,7 +13,7 @@
 
 void initialize(void);
 uint32_t leak_kernel_base(void);
-void exploit(uint32_t);
+void exploit(uint32_t, bool);
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *button;
@@ -52,8 +52,8 @@ void exploit(uint32_t);
     initialize();
     uint32_t kernel_base = leak_kernel_base();
     printf("kernel base: %p\n", (void *)kernel_base);
-    exploit(kernel_base);
-    
+    exploit(kernel_base, strncmp([[[UIDevice currentDevice] systemVersion] cStringUsingEncoding:NSUTF8StringEncoding], "9.0", 3) == 0);
+
     // Update button.
     self.button.enabled = NO;
     [self.button setTitle:@"w00t root" forState:UIControlStateNormal];
