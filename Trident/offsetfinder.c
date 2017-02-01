@@ -432,7 +432,7 @@ uint32_t find_copyin(void) {
 uint32_t find_bx_lr(void) {
     switch (target_environment) {
         case iPhone41_iOS910: return 0xd97d2;
-        case iPhone41_iOS920: return 0xd97d2;
+        case iPhone41_iOS920: return 0xd8752;
         case iPhone41_iOS921: return 0xd8752;
         case iPhone41_iOS930: return 0xd984a;
         case iPhone41_iOS931: return 0xd984a;
