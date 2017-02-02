@@ -618,7 +618,7 @@ uint32_t find_vm_kernel_addrperm(void) {
 
 uint32_t find_kernel_pmap(void) {
     switch (target_environment) {
-        case iPhone41_iOS920: return 0x3f8444;
+        case iPhone41_iOS910: return 0x3f8444;
         case iPhone41_iOS920: return 0x3ef444;
         case iPhone41_iOS921: return 0x3ef444;
         case iPhone41_iOS930: return 0x3f6454;
