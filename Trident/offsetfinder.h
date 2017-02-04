@@ -66,7 +66,8 @@ typedef enum {
     iPad33_iOS932,
     iPad33_iOS933,
     iPod51_iOS910,
-    iPod51_iOS932
+    iPod51_iOS932,
+    iPod51_iOS933
 } t_target_environment;
 
 extern t_target_environment target_environment;
