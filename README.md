@@ -20,7 +20,7 @@ Supported devices:
 * iPhone4,1 (N94AP), iOS 9.3 (Eagle 13E237)
 * iPhone4,1 (N94AP), iOS 9.3.1 (Eagle 13E238)
 * iPhone4,1 (N94AP), iOS 9.3.2 (Frisco 13F69)
-* iPhone4,1 (N94AP), iOS 9.3.3 (Genoa 13G34)
+* iPhone4,1 (N94AP), iOS 9.3.3 ( 13G34)
 * iPhone4,1 (N94AP), iOS 9.3.4 (Genoa 13G35)
 * iPhone5,2 (N42AP), iOS 9.2 (Castlerock 13C75)
 * iPhone5,2 (N42AP), iOS 9.2.1 (Dillon 13D15)
@@ -72,6 +72,7 @@ Supported devices:
 * iPad3,3 (J2AAP), iOS 9.3.3 (Genoa 13G34)
 * iPod5,1 (N78AP), iOS 9.1 (Boulder 13B143)
 * iPod5,1 (N78AP), iOS 9.3.2 (Frisco 13F69)
+* iPod5,1 (N78AP), iOS 9.3.3 (Genoa 13G34)
 
 [Guide for finding offsets by angelXwind](https://angelxwind.net/?page/trident-address-tutorial)
 
