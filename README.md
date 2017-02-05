@@ -8,7 +8,7 @@ CVE-2016-4657 (WebKit exploit) is NOT included despite the name of the project b
 
 The objective of the exploit is to gain root access over the device.
 
-At this point it would be possible to jailbreak the device by applying more patches to the kernel (for sandbox, code signing enforcement and more).
+At this point it would be possible to jailbreak the device by applying more patches to the kernel (for sandbox, code signing enforcement and more). jk9357 did it and released [Home Depot](http://wall.supplies), a jailbreak based on this exploit.
 
 iOS 9.3.5 is not supported as vulnerabilities have been patched in that version.
 
