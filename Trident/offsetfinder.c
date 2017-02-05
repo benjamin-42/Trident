@@ -1174,3 +1174,10 @@ uint32_t find_mac_proc_check(void) {
         default: abort();
     }
 }
+
+uint32_t find_allproc(void) {
+    switch (target_environment) {
+        case iPhone52_iOS933: return 0x45f2c8;
+        default: abort();
+    }
+}

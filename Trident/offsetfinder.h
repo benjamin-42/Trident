@@ -129,4 +129,7 @@ uint32_t find_posix_check(void);
 // mac_proc_check_ret_addr offset
 uint32_t find_mac_proc_check(void);
 
+// allproc offset
+uint32_t find_allproc(void);
+
 #endif /* offsetfinder_h */
