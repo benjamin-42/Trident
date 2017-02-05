@@ -72,6 +72,7 @@ Supported devices:
 * iPad3,3 (J2AAP), iOS 9.3.3 (Genoa 13G34)
 * iPod5,1 (N78AP), iOS 9.1 (Boulder 13B143)
 * iPod5,1 (N78AP), iOS 9.3.2 (Frisco 13F69)
+* iPod5,1 (N78AP), iOS 9.3.3 (Genoa 13G34)
 
 [Guide for finding offsets by angelXwind](https://angelxwind.net/?page/trident-address-tutorial)
 
