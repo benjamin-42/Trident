@@ -8,7 +8,7 @@ CVE-2016-4657 (WebKit exploit) is NOT included despite the name of the project b
 
 The objective of the exploit is to gain root access over the device.
 
-At this point it would be possible to jailbreak the device by applying more patches to the kernel (for sandbox, code signing enforcement and more).
+At this point it would be possible to jailbreak the device by applying more patches to the kernel (for sandbox, code signing enforcement and more). jk9357 did it and released [Home Depot](http://wall.supplies), a jailbreak based on this exploit.
 
 iOS 9.3.5 is not supported as vulnerabilities have been patched in that version.
 
@@ -22,10 +22,13 @@ Supported devices:
 * iPhone4,1 (N94AP), iOS 9.3.2 (Frisco 13F69)
 * iPhone4,1 (N94AP), iOS 9.3.3 (Genoa 13G34)
 * iPhone4,1 (N94AP), iOS 9.3.4 (Genoa 13G35)
+* iPhone5,1 (N41AP), iOS 9.3.3 (Genoa 13G34)
 * iPhone5,2 (N42AP), iOS 9.2 (Castlerock 13C75)
 * iPhone5,2 (N42AP), iOS 9.2.1 (Dillon 13D15)
 * iPhone5,2 (N42AP), iOS 9.3.0 (Eagle 13E233)
 * iPhone5,2 (N42AP), iOS 9.3.2 (Frisco 13F69)
+* iPhone5,2 (N42AP), iOS 9.3.3 (Genoa 13G34)
+* iPhone5,2 (N42AP), iOS 9.3.4 (Genoa 13G35)
 * iPhone5,3 (N48AP), iOS 9.2.1 (Dillon 13D15)
 * iPhone5,3 (N48AP), iOS 9.3.2 (Frisco 13F69)
 * iPhone5,3 (N48AP), iOS 9.3.3 (Genoa 13G34)
