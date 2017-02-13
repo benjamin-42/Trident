@@ -12,7 +12,7 @@ Check Device compatibility first! If your device is not compatible, check out th
 5) Open Trident, tap YOLO, and wait for about 10 seconds after w00t root appears on the screen.  
 6) Then quit the app, open Home Depot, and jailbreak your device again.  
 7) You should be out of the respring loop! (and you will probably also boot into safe mode)  
-8) Open Cydia and uninstall all Noctis9 and its dependencies.  
+8) Open Cydia and uninstall Noctis9 and all of its dependencies.  
 Hope this helps. ;)
 
 This exploits the following two CVEs:
