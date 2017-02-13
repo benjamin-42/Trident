@@ -821,7 +821,7 @@ uint32_t find_flush_dcache(void) {
         case iPad24_iOS932: return 0xbc260;
         case iPad24_iOS933: return 0xbc1d8;
         case iPad24_iOS934: return 0xbc1d4;
-        case iPad25_iOS932: return 
+        case iPad25_iOS932: return 0xbc260;
         case iPad31_iOS934: return 0xbc1d4;
         case iPad32_iOS931: return 0xbc250;
         case iPad33_iOS932: return 0xbc260;
@@ -947,6 +947,7 @@ uint32_t find_task_for_pid(void) {
         case iPad24_iOS932: return 0x2fcd80;
         case iPad24_iOS933: return 0x2fcec0;
         case iPad24_iOS934: return 0x2fcec0;
+        case iPad25_iOS932: return 0x2fcd80;
         case iPad31_iOS934: return 0x2fcec0;
         case iPad32_iOS931: return 0x2fcc8c;
         case iPad33_iOS932: return 0x2fcd80;
@@ -1009,6 +1010,7 @@ uint32_t find_setreuid(void) {
         case iPad24_iOS932: return 0x2a985c;
         case iPad24_iOS933: return 0x2a9988;
         case iPad24_iOS934: return 0x2a9988;
+        case iPad25_iOS932: return 0x2a985c;
         case iPad31_iOS934: return 0x2a9988;
         case iPad32_iOS931: return 0x2a977c;
         case iPad33_iOS932: return 0x2a985c;
@@ -1071,6 +1073,7 @@ uint32_t find_setreuid_cred_update(void) {
         case iPad24_iOS932: return 0xe031;
         case iPad24_iOS933: return 0xe031;
         case iPad24_iOS934: return 0xe031;
+        case iPad25_iOS932: return 0xe031;
         case iPad31_iOS934: return 0xe031;
         case iPad32_iOS931: return 0xe031;
         case iPad33_iOS932: return 0xe031;
@@ -1133,6 +1136,7 @@ uint32_t find_pid_check(void) {
         case iPad24_iOS932: return 0x14;
         case iPad24_iOS933: return 0x14;
         case iPad24_iOS934: return 0x14;
+        case iPad25_iOS932: return 0x14;
         case iPad31_iOS934: return 0x14;
         case iPad32_iOS931: return 0x14;
         case iPad33_iOS932: return 0x14;
@@ -1195,6 +1199,7 @@ uint32_t find_posix_check(void) {
         case iPad24_iOS932: return 0x3e;
         case iPad24_iOS933: return 0x3e;
         case iPad24_iOS934: return 0x3e;
+        case iPad25_iOS932: return 0x3e;
         case iPad31_iOS934: return 0x3e;
         case iPad32_iOS931: return 0x3e;
         case iPad33_iOS932: return 0x3e;
@@ -1257,6 +1262,7 @@ uint32_t find_mac_proc_check(void) {
         case iPad24_iOS932: return 0x1e6;
         case iPad24_iOS933: return 0x1e6;
         case iPad24_iOS934: return 0x1e6;
+        case iPad25_iOS932: return 0x1e6;
         case iPad31_iOS934: return 0x1e6;
         case iPad32_iOS931: return 0x1e6;
         case iPad33_iOS932: return 0x1e6;
