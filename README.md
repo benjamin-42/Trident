@@ -1,19 +1,4 @@
-# Noctis9-Fix
-
-THIS ASSUMES YOU ARE JAILBROKEN VIA HOME DEPOT
-
-This removes /Library/MobileSubstrate/DynamicLibraries/Noctis9.dylib, /Library/MobileSubstrate/DynamicLibraries/Noctis9.plist, /Library/PreferenceBundles/NoctisPrefs.bundle, and /Library/PreferenceLoader/Preferences/NoctisPrefs.plist.  
-Instructions:  
-Check Device compatibility first! If your device is not compatible, check out this guide to add compatibility: [Guide for finding offsets by angelXwind](https://angelxwind.net/?page/trident-address-tutorial)  
-1) If your device is currently in a respring loop, restart it by holding the home+power buttons.  
-2) Once rebooted, plug the device into your computer.  
-3) Download this project, open it with Xcode, change the team and bundle identifier, and build it (make sure your device is selected as the target).  
-4) On your device navigate to Settings ---> General ---> Device Management and trust the app developer.  
-5) Open Trident, tap YOLO, and wait for about 10 seconds after w00t root appears on the screen.  
-6) Then quit the app, open Home Depot, and jailbreak your device again.  
-7) You should be out of the respring loop! (and you will probably also boot into safe mode)  
-8) Open Cydia and uninstall Noctis9 and all of its dependencies.  
-Hope this helps. ;)
+# Trident
 
 This exploits the following two CVEs:
 * CVE-2016-4655: allow an attacker to obtain sensitive information from kernel memory via a crafted app
