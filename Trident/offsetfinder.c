@@ -283,7 +283,7 @@ uint32_t find_bufattr_cpx(void) {
         case iPhone41_iOS932: return 0xd9848;
         case iPhone41_iOS933: return 0xd9838;
         case iPhone41_iOS934: return 0xd9838;
-        case iPhone51_iOS933: return 0xdea48:
+        case iPhone51_iOS933: return 0xdea48;
         case iPhone52_iOS920: return 0xdd9dc;
         case iPhone52_iOS921: return 0xdd9dc;
         case iPhone52_iOS930: return 0xdea48;
@@ -538,7 +538,7 @@ uint32_t find_write_gadget(void) {
         case iPhone41_iOS932: return 0xc73e8;
         case iPhone41_iOS933: return 0xc73e8;
         case iPhone41_iOS934: return 0xc73e8;
-        case iPhone51_iOS933: return 0xcb508:
+        case iPhone51_iOS933: return 0xcb508;
         case iPhone52_iOS920: return 0xca5a8;
         case iPhone52_iOS921: return 0xca5a8;
         case iPhone52_iOS930: return 0xcb508;
@@ -736,7 +736,7 @@ uint32_t find_flush_dcache(void) {
         case iPhone52_iOS930: return 0xbf2bc;
         case iPhone52_iOS932: return 0xbf274;
         case iPhone52_iOS933: return 0xbf404;
-        case iPhone52_iOS934: return ;
+        case iPhone52_iOS934: return 0xbf404;
         case iPhone53_iOS921: return 0xbe610;
         case iPhone53_iOS932: return 0xbf274;
         case iPhone53_iOS933: return 0xbf404;
@@ -864,7 +864,7 @@ uint32_t find_task_for_pid(void) {
         case iPhone52_iOS930: return 0x302e3c;
         case iPhone52_iOS932: return 0x302df0;
         case iPhone52_iOS933: return 0x302fd4;
-        case iPhone52_iOS934: return 0x302fd4;// ? to be verified
+        case iPhone52_iOS934: return 0x302fd4;
         case iPhone53_iOS921: return 0x2fbc9c;
         case iPhone53_iOS932: return 0x302df0;
         case iPhone53_iOS933: return 0x302fd4;
@@ -915,7 +915,7 @@ uint32_t find_task_for_pid(void) {
 uint32_t find_setreuid(void) {
     switch (target_environment) {
         case iPhone41_iOS910: return 0x2aa31c;
-        case iPhone41_iOS920: return 0x2a3ab4;// ? to be verified
+        case iPhone41_iOS920: return 0x2a3ab4;
         case iPhone41_iOS921: return 0x2a3bc4;
         case iPhone41_iOS930: return 0x2a977c;
         case iPhone41_iOS931: return 0x2a977c;
@@ -928,7 +928,7 @@ uint32_t find_setreuid(void) {
         case iPhone52_iOS930: return 0x2af658;
         case iPhone52_iOS932: return 0x2af5f8;
         case iPhone52_iOS933: return 0x2af7b8;
-        case iPhone52_iOS934: return 0x2af7b8;// ? to be verified
+        case iPhone52_iOS934: return 0x2af7b8;
         case iPhone53_iOS921: return 0x2a9f34;
         case iPhone53_iOS932: return 0x2af5f8;
         case iPhone53_iOS933: return 0x2af7b8;
