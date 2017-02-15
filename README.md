@@ -30,7 +30,6 @@ Supported devices:
 * iPhone5,2 (N42AP), iOS 9.3.3 (Genoa 13G34)
 * iPhone5,2 (N42AP), iOS 9.3.4 (Genoa 13G35)
 * iPhone5,3 (N48AP), iOS 9.2.1 (Dillon 13D15)
-* iPhone5,3 (N48AP), iOS 9.3.1 (Eagle 13E238)
 * iPhone5,3 (N48AP), iOS 9.3.2 (Frisco 13F69)
 * iPhone5,3 (N48AP), iOS 9.3.3 (Genoa 13G34)
 * iPhone5,4 (A1507), iOS 9.3.2 (Frisco 13F69)
@@ -104,5 +103,3 @@ Thanks: Lookout, Pangu team, i0n1c, jndok, kernelpool, planetbeing, qwertyoruiop
 > You feel it's true  
 > Its the little things in life  
 > that I feel
-
-
