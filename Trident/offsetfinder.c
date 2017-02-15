@@ -1,4 +1,3 @@
-//
 //  offsetfinder.c
 //  Trident
 //
