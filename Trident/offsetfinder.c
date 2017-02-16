@@ -24,7 +24,7 @@ t_target_environment info_to_target_environment(const char *device_model, const 
     determineTarget("iPhone4,1", "9.3.2", iPhone41_iOS932);
     determineTarget("iPhone4,1", "9.3.3", iPhone41_iOS933);
     determineTarget("iPhone4,1", "9.3.4", iPhone41_iOS934);
-    determineTarget("iPhone5,1", "9.1.0", iPhone51_iOS910);
+    determineTarget("iPhone5,1", "9.1", iPhone51_iOS910);
     determineTarget("iPhone5,1", "9.3.3", iPhone51_iOS933);
     determineTarget("iPhone5,2", "9.2", iPhone52_iOS920);
     determineTarget("iPhone5,2", "9.2.1", iPhone52_iOS921);
@@ -36,6 +36,7 @@ t_target_environment info_to_target_environment(const char *device_model, const 
     determineTarget("iPhone5,3", "9.3.1", iPhone53_iOS931);
     determineTarget("iPhone5,3", "9.3.2", iPhone53_iOS932);
     determineTarget("iPhone5,3", "9.3.3", iPhone53_iOS933);
+    determineTarget("iPhone5,3", "9.3.4", iPhone53_iOS934);
     determineTarget("iPhone5,4", "9.3.2", iPhone54_iOS932);
     determineTarget("iPad2,1", "9.1", iPad21_iOS910);
     determineTarget("iPad2,1", "9.2", iPad21_iOS920);
@@ -105,6 +106,7 @@ uint32_t find_OSSerializer_serialize(void) {
         case iPhone53_iOS931: return 0x31ef50;
         case iPhone53_iOS932: return 0x31ef58;
         case iPhone53_iOS933: return 0x31f13c;
+        case iPhone53_iOS934: return 0x31f13c;
         case iPhone54_iOS932: return 0x31ed7c;
         case iPad21_iOS910: return 0x319450;
         case iPad21_iOS920: return 0x3106fc;
@@ -171,6 +173,7 @@ uint32_t find_OSSymbol_getMetaClass(void) {
         case iPhone53_iOS931: return 0x321810;
         case iPhone53_iOS932: return 0x321818;
         case iPhone53_iOS933: return 0x3219fc;
+        case iPhone53_iOS934: return 0x3219fc;
         case iPhone54_iOS932: return 0x321818;
         case iPad21_iOS910: return 0x31bc3c;
         case iPad21_iOS920: return 0x312e18;
@@ -237,6 +240,7 @@ uint32_t find_calend_gettime(void) {
         case iPhone53_iOS931: return 0x1ee6c;
         case iPhone53_iOS932: return 0x1ee6c;
         case iPhone53_iOS933: return 0x1eeac;
+        case iPhone53_iOS934: return 0x1eeac;
         case iPhone54_iOS932: return 0x1ee6c;
         case iPad21_iOS910: return 0x1db34;
         case iPad21_iOS920: return 0x1de84;
@@ -303,6 +307,7 @@ uint32_t find_bufattr_cpx(void) {
         case iPhone53_iOS931: return 0xdea48;
         case iPhone53_iOS932: return 0xdea48;
         case iPhone53_iOS933: return 0xdea48;
+        case iPhone53_iOS934: return 0xdea48;
         case iPhone54_iOS932: return 0xdea48;
         case iPad21_iOS910: return 0xd97d0;
         case iPad21_iOS920: return 0xd8750;
@@ -368,6 +373,7 @@ uint32_t find_clock_ops(void) {
         case iPhone53_iOS931: return 0x40b428;
         case iPhone53_iOS932: return 0x40b428;
         case iPhone53_iOS933: return 0x40b428;
+        case iPhone53_iOS934: return 0x40b428;
         case iPhone54_iOS932: return 0x40b428;
         case iPad21_iOS910: return 0x4053cc;
         case iPad21_iOS920: return 0x3fc3dc;
@@ -434,6 +440,7 @@ uint32_t find_copyin(void) {
         case iPhone53_iOS931: return 0xcb7dc;
         case iPhone53_iOS932: return 0xcb7dc;
         case iPhone53_iOS933: return 0xcb7dc;
+        case iPhone53_iOS934: return 0xcb7dc;
         case iPhone54_iOS932: return 0xcb7dc;
         case iPad21_iOS910: return 0xc7754;
         case iPad21_iOS920: return 0xc6754;
@@ -500,6 +507,7 @@ uint32_t find_bx_lr(void) {
         case iPhone53_iOS931: return 0xdea4a;
         case iPhone53_iOS932: return 0xdea4a;
         case iPhone53_iOS933: return 0xdea4a;
+        case iPhone53_iOS934: return 0xdea4a;
         case iPhone54_iOS932: return 0xdea4a;
         case iPad21_iOS910: return 0xd97d2;
         case iPad21_iOS920: return 0xd8752;
@@ -566,6 +574,7 @@ uint32_t find_write_gadget(void) {
         case iPhone53_iOS931: return 0xcb508;
         case iPhone53_iOS932: return 0xcb508;
         case iPhone53_iOS933: return 0xcb508;
+        case iPhone53_iOS934: return 0xcb508;
         case iPhone54_iOS932: return 0xcb508;
         case iPad21_iOS910: return 0xc7488;
         case iPad21_iOS920: return 0xc6488;
@@ -632,6 +641,7 @@ uint32_t find_vm_kernel_addrperm(void) {
         case iPhone53_iOS931: return 0x45d978;
         case iPhone53_iOS932: return 0x45d978;
         case iPhone53_iOS933: return 0x45d978;
+        case iPhone53_iOS934: return 0x45d978;
         case iPhone54_iOS932: return 0x45d978;
         case iPad21_iOS910: return 0x457030;
         case iPad21_iOS920: return 0x44e840;
@@ -698,6 +708,7 @@ uint32_t find_kernel_pmap(void) {
         case iPhone53_iOS931: return 0x3fe454;
         case iPhone53_iOS932: return 0x3fe454;
         case iPhone53_iOS933: return 0x3fe454;
+        case iPhone53_iOS934: return 0x3fe454;
         case iPhone54_iOS932: return 0x3fe454;
         case iPad21_iOS910: return 0x3f8444;
         case iPad21_iOS920: return 0x3ef444;
@@ -764,6 +775,7 @@ uint32_t find_flush_dcache(void) {
         case iPhone53_iOS931: return 0xbf284;
         case iPhone53_iOS932: return 0xbf274;
         case iPhone53_iOS933: return 0xbf404;
+        case iPhone53_iOS934: return 0xbf404;
         case iPhone54_iOS932: return 0xBf274;
         case iPad21_iOS910: return 0xbcb7c;
         case iPad21_iOS920: return 0xbb710;
@@ -830,6 +842,7 @@ uint32_t find_invalidate_tlb(void) {
         case iPhone53_iOS931: return 0xcb560;
         case iPhone53_iOS932: return 0xcb560;
         case iPhone53_iOS933: return 0xcb560;
+        case iPhone53_iOS934: return 0xcb560;
         case iPhone54_iOS932: return 0xcb560;
         case iPad21_iOS910: return 0xc74e0;
         case iPad21_iOS920: return 0xc64e0;
@@ -896,6 +909,7 @@ uint32_t find_task_for_pid(void) {
         case iPhone53_iOS931: return 0x302e3c;
         case iPhone53_iOS932: return 0x302df0;
         case iPhone53_iOS933: return 0x302fd4;
+        case iPhone53_iOS934: return 0x302fd4;
         case iPhone54_iOS932: return 0x302df0;
         case iPad21_iOS910: return 0x2fe034;
         case iPad21_iOS920: return 0x2f55b4;
@@ -962,6 +976,7 @@ uint32_t find_setreuid(void) {
         case iPhone53_iOS931: return 0x2af658;
         case iPhone53_iOS932: return 0x2af5f8;
         case iPhone53_iOS933: return 0x2af7b8;
+        case iPhone53_iOS934: return 0x2af7b8;
         case iPhone54_iOS932: return 0x2af5f8;
         case iPad21_iOS910: return 0x2aa31c;
         case iPad21_iOS920: return 0x2a3ab4;
@@ -1028,6 +1043,7 @@ uint32_t find_setreuid_cred_update(void) {
         case iPhone53_iOS931: return 0xe031;
         case iPhone53_iOS932: return 0xe031;
         case iPhone53_iOS933: return 0xe031;
+        case iPhone53_iOS934: return 0xe031;
         case iPhone54_iOS932: return 0xe031;
         case iPad21_iOS910: return 0xe031;
         case iPad21_iOS920: return 0xe031;
@@ -1094,6 +1110,7 @@ uint32_t find_pid_check(void) {
         case iPhone53_iOS931: return 0x16;
         case iPhone53_iOS932: return 0x16;
         case iPhone53_iOS933: return 0x16;
+        case iPhone53_iOS934: return 0x16;
         case iPhone54_iOS932: return 0x16;
         case iPad21_iOS910: return 0x16;
         case iPad21_iOS920: return 0x14;
@@ -1160,6 +1177,7 @@ uint32_t find_posix_check(void) {
         case iPhone53_iOS931: return 0x3e;
         case iPhone53_iOS932: return 0x3e;
         case iPhone53_iOS933: return 0x3e;
+        case iPhone53_iOS934: return 0x3e;
         case iPhone54_iOS932: return 0x3e;
         case iPad21_iOS910: return 0x40;
         case iPad21_iOS920: return 0x3e;
@@ -1226,6 +1244,7 @@ uint32_t find_mac_proc_check(void) {
         case iPhone53_iOS931: return 0x1e6;
         case iPhone53_iOS932: return 0x1e6;
         case iPhone53_iOS933: return 0x1e6;
+        case iPhone53_iOS934: return 0x1e6;
         case iPhone54_iOS932: return 0x1e6;
         case iPad21_iOS910: return 0x224;
         case iPad21_iOS920: return 0x1e6;
