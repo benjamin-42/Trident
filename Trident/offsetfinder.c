@@ -970,7 +970,7 @@ uint32_t find_flush_dcache(void) {
         case iPhone51_iOS933: return 0xbf404;
         case iPhone51_iOS934: return 0xbf404;
         case iPhone52_iOS910: return 0xbf770;
-        case iPhone52_iOS920: return 0xbe5d0;
+        case iPhone52_iOS920: return 0xbe598;
         case iPhone52_iOS921: return 0xbe610;
         case iPhone52_iOS930: return 0xbf2bc;
         case iPhone52_iOS931: return 0xbf284;
@@ -978,7 +978,7 @@ uint32_t find_flush_dcache(void) {
         case iPhone52_iOS933: return 0xbf404;
         case iPhone52_iOS934: return 0xbf404;
         case iPhone53_iOS910: return 0xbf770;
-        case iPhone53_iOS920: return 
+        case iPhone53_iOS920: return 0xbe598;
         case iPhone53_iOS921: return 0xbe610;
         case iPhone53_iOS930: return 0xbf284;
         case iPhone53_iOS931: return 0xbf284;
@@ -1223,7 +1223,7 @@ uint32_t find_setreuid(void) {
         case iPhone51_iOS931: return 0x2af658;
         case iPhone51_iOS932: return 0x2af5f8;
         case iPhone51_iOS933: return 0x2af7b8;
-        case iPhone51_iOS934: return 0x302df0;
+        case iPhone51_iOS934: return 0x2af7b8;
         case iPhone52_iOS910: return 0x2b00f0;
         case iPhone52_iOS920: return 0x2a9e24;
         case iPhone52_iOS921: return 0x2a9f34;
