@@ -451,7 +451,7 @@ uint32_t find_clock_ops(void) {
         case iPhone41_iOS932: return 0x403428;
         case iPhone41_iOS933: return 0x403428;
         case iPhone41_iOS934: return 0x403428;
-        case iPhone51_iOS910: return 0x40c5a0;
+        case iPhone51_iOS910: return 0x40c3cc;
         case iPhone51_iOS920: return 0x4033dc;
         case iPhone51_iOS921: return 0x4033dc;
         case iPhone51_iOS930: return 0x403428;
