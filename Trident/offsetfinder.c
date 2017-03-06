@@ -167,7 +167,7 @@ uint32_t find_OSSerializer_serialize(void) {
         case iPhone51_iOS930: return 0x31ef50;
         case iPhone51_iOS931: return 0x31ef50;
         case iPhone51_iOS932: return 0x302e3c;
-        case iPhone51_iOS933: return 0x31f13c; 
+        case iPhone51_iOS933: return 0x31f13c;
         case iPhone51_iOS934: return 0x31f13c;
         case iPhone52_iOS910: return 0x31fd1c;
         case iPhone52_iOS920: return 0x317768;
@@ -725,7 +725,7 @@ uint32_t find_copyin(void) {
         case iPhone52_iOS931: return 0xcb7dc;
         case iPhone52_iOS932: return 0xcb7dc;
         case iPhone52_iOS933: return 0xcb7dc;
-        case iPhone52_iOS934: return 0xCB7DC;   
+        case iPhone52_iOS934: return 0xCB7DC;
         case iPhone53_iOS910: return 0xcb87c;
         case iPhone53_iOS920: return 0xca87c;
         case iPhone53_iOS921: return 0xca87c;
