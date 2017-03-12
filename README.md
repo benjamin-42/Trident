@@ -143,6 +143,8 @@ Supported devices:
 * iPad3,3 (J2AAP), iOS 9.3 (Eagle 13E233)
 * iPad3,3 (J2AAP), iOS 9.3 (Eagle 13E237)
 * iPad3,3 (J2AAP), iOS 9.3.1 (Eagle 13E238)
+* iPad3,2 (J2AP), iOS 9.3.2 (Eagle 13E238)
+* iPad3,3 (J2AAP), iOS 9.2 (Castlerock 13C75)
 * iPad3,3 (J2AAP), iOS 9.3.2 (Frisco 13F69)
 * iPad3,3 (J2AAP), iOS 9.3.3 (Genoa 13G34)
 * iPad3,3 (J2AAP), iOS 9.3.4 (Genoa 13G35)

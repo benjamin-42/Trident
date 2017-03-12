@@ -133,6 +133,7 @@ t_target_environment info_to_target_environment(const char *device_model, const 
     determineTarget("iPad3,3", "9.2.1", iPad33_iOS921);
     determineTarget("iPad3,3", "9.3", iPad33_iOS930);
     determineTarget("iPad3,3", "9.3.1", iPad33_iOS931);
+    determineTarget("iPad3,3", "9.2",iPad33_iOS920);
     determineTarget("iPad3,3", "9.3.2", iPad33_iOS932);
     determineTarget("iPad3,3", "9.3.3", iPad33_iOS933);
     determineTarget("iPad3,3", "9.3.4", iPad33_iOS934);
@@ -720,7 +721,7 @@ uint32_t find_clock_ops(void) {
         case iPhone41_iOS932: return 0x403428;
         case iPhone41_iOS933: return 0x403428;
         case iPhone41_iOS934: return 0x403428;
-        case iPhone51_iOS910: return 0x40c5a0;
+        case iPhone51_iOS910: return 0x40c3cc;
         case iPhone51_iOS920: return 0x4033dc;
         case iPhone51_iOS921: return 0x4033dc;
         case iPhone51_iOS930: return 0x403428;
