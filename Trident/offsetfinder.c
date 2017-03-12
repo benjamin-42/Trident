@@ -5,6 +5,7 @@
 //  Created by Benjamin Randazzo on 14/12/2016.
 //  Copyright © 2016 Benjamin Randazzo. All rights reserved.
 //
+//
 
 #include "offsetfinder.h"
 
@@ -95,6 +96,7 @@ t_target_environment info_to_target_environment(const char *device_model, const 
     determineTarget("iPod5,1", "9.1", iPod51_iOS910);
     determineTarget("iPod5,1", "9.3.2", iPod51_iOS932);
     determineTarget("iPod5,1", "9.3.3", iPod51_iOS933);
+    determineTarget("iPad3,3", "9.2",iPad33_iOS920);
     return NotSupported;
 }
 
@@ -104,6 +106,7 @@ void init_target_environment(const char *device_model, const char *system_versio
 
 uint32_t find_OSSerializer_serialize(void) {
     switch (target_environment) {
+        case iPad33_iOS920: return 0x3106fc;
         case iPhone41_iOS910: return 0x319450;
         case iPhone41_iOS920: return 0x3106fc;
         case iPhone41_iOS921: return 0x3107fc;
@@ -189,6 +192,7 @@ uint32_t find_OSSerializer_serialize(void) {
 
 uint32_t find_OSSymbol_getMetaClass(void) {
     switch (target_environment) {
+        case iPad33_iOS920: return 0x312e18;
         case iPhone41_iOS910: return 0x31bc3c;
         case iPhone41_iOS920: return 0x312e18;
         case iPhone41_iOS921: return 0x312f18;
@@ -274,6 +278,7 @@ uint32_t find_OSSymbol_getMetaClass(void) {
 
 uint32_t find_calend_gettime(void) {
     switch (target_environment) {
+        case iPad33_iOS920: return 0x1de84;
         case iPhone41_iOS910: return 0x1db34;
         case iPhone41_iOS920: return 0x1de84;
         case iPhone41_iOS921: return 0x1de60;
@@ -359,6 +364,7 @@ uint32_t find_calend_gettime(void) {
 
 uint32_t find_bufattr_cpx(void) {
     switch (target_environment) {
+        case iPad33_iOS920: return 0xd8750;
         case iPhone41_iOS910: return 0xd97d0;
         case iPhone41_iOS920: return 0xd8750;
         case iPhone41_iOS921: return 0xd8750;
@@ -443,6 +449,7 @@ uint32_t find_bufattr_cpx(void) {
 
 uint32_t find_clock_ops(void) {
     switch (target_environment) {
+        case iPad33_iOS920: return 0x3fc3dc;
         case iPhone41_iOS910: return 0x4053cc;
         case iPhone41_iOS920: return 0x3fc3dc;
         case iPhone41_iOS921: return 0x3fc3dc;
@@ -528,6 +535,7 @@ uint32_t find_clock_ops(void) {
 
 uint32_t find_copyin(void) {
     switch (target_environment) {
+        case iPad33_iOS920: return 0xc6754;
         case iPhone41_iOS910: return 0xc7754;
         case iPhone41_iOS920: return 0xc6754;
         case iPhone41_iOS921: return 0xc6754;
@@ -613,6 +621,7 @@ uint32_t find_copyin(void) {
 
 uint32_t find_bx_lr(void) {
     switch (target_environment) {
+        case iPad33_iOS920: return 0xd8752;
         case iPhone41_iOS910: return 0xd97d2;
         case iPhone41_iOS920: return 0xd8752;
         case iPhone41_iOS921: return 0xd8752;
@@ -698,6 +707,7 @@ uint32_t find_bx_lr(void) {
 
 uint32_t find_write_gadget(void) {
     switch (target_environment) {
+        case iPad33_iOS920: return 0xc6488;
         case iPhone41_iOS910: return 0xc7488;
         case iPhone41_iOS920: return 0xc6488;
         case iPhone41_iOS921: return 0xc6488;
@@ -782,7 +792,8 @@ uint32_t find_write_gadget(void) {
 }
 
 uint32_t find_vm_kernel_addrperm(void) {
-    switch (target_environment) {
+    switch (target_environment){
+        case iPad33_iOS920: return 0x44e840;
         case iPhone41_iOS910: return 0x457030;
         case iPhone41_iOS920: return 0x44e840;
         case iPhone41_iOS921: return 0x44e840;
@@ -868,6 +879,7 @@ uint32_t find_vm_kernel_addrperm(void) {
 
 uint32_t find_kernel_pmap(void) {
     switch (target_environment) {
+        case iPad33_iOS920: return 0x3ef444;
         case iPhone41_iOS910: return 0x3f8444;
         case iPhone41_iOS920: return 0x3ef444;
         case iPhone41_iOS921: return 0x3ef444;
@@ -953,6 +965,7 @@ uint32_t find_kernel_pmap(void) {
 
 uint32_t find_flush_dcache(void) {
     switch (target_environment) {
+        case iPad33_iOS920: return 0xbb710;
         case iPhone41_iOS910: return 0xbcb7c;
         case iPhone41_iOS920: return 0xbb710;
         case iPhone41_iOS921: return 0xbb760;
@@ -1038,6 +1051,7 @@ uint32_t find_flush_dcache(void) {
 
 uint32_t find_invalidate_tlb(void) {
     switch (target_environment) {
+        case iPad33_iOS920: return 0xc64e0;
         case iPhone41_iOS910: return 0xc74e0;
         case iPhone41_iOS920: return 0xc64e0;
         case iPhone41_iOS921: return 0xc64e0;
@@ -1123,6 +1137,7 @@ uint32_t find_invalidate_tlb(void) {
 
 uint32_t find_task_for_pid(void) {
     switch (target_environment) {
+        case iPad33_iOS920: return 0x2f55b4;
         case iPhone41_iOS910: return 0x2fe034;
         case iPhone41_iOS920: return 0x2f55b4;
         case iPhone41_iOS921: return 0x2f56c4;
@@ -1208,6 +1223,7 @@ uint32_t find_task_for_pid(void) {
 
 uint32_t find_setreuid(void) {
     switch (target_environment) {
+        case iPad33_iOS920: return 0x2a3ab4;
         case iPhone41_iOS910: return 0x2aa31c;
         case iPhone41_iOS920: return 0x2a3ab4;
         case iPhone41_iOS921: return 0x2a3bc4;
@@ -1293,6 +1309,7 @@ uint32_t find_setreuid(void) {
 
 uint32_t find_setreuid_cred_update(void) {
     switch (target_environment) {
+        case iPad33_iOS920: return 0xe031;
         case iPhone41_iOS910: return 0xe031;
         case iPhone41_iOS920: return 0xe031;
         case iPhone41_iOS921: return 0xe031;
@@ -1378,6 +1395,7 @@ uint32_t find_setreuid_cred_update(void) {
 
 uint32_t find_pid_check(void) {
     switch (target_environment) {
+        case iPad33_iOS920: return 0x14;
         case iPhone41_iOS910: return 0x14;
         case iPhone41_iOS920: return 0x14;
         case iPhone41_iOS921: return 0x14;
@@ -1463,6 +1481,7 @@ uint32_t find_pid_check(void) {
 
 uint32_t find_posix_check(void) {
     switch (target_environment) {
+        case iPad33_iOS920: return 0x3e;
         case iPhone41_iOS910: return 0x3e;
         case iPhone41_iOS920: return 0x3e;
         case iPhone41_iOS921: return 0x3e;
@@ -1548,6 +1567,7 @@ uint32_t find_posix_check(void) {
 
 uint32_t find_mac_proc_check(void) {
     switch (target_environment) {
+        case iPad33_iOS920: return 0x1e6;
         case iPhone41_iOS910: return 0x224;
         case iPhone41_iOS920: return 0x1e6;
         case iPhone41_iOS921: return 0x1e6;
