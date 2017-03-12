@@ -94,6 +94,7 @@ Supported devices:
 * iPad2,4 (K93AAP), iOS 9.3.4 (Genoa 13G35)
 * iPad3,1 (J1AP), iOS 9.3.4 (Genoa 13G35)
 * iPad3,2 (J2AP), iOS 9.3.2 (Eagle 13E238)
+* iPad3,3 (J2AAP), iOS 9.2 (Castlerock 13C75)
 * iPad3,3 (J2AAP), iOS 9.3.2 (Frisco 13F69)
 * iPad3,3 (J2AAP), iOS 9.3.3 (Genoa 13G34)
 * iPod5,1 (N78AP), iOS 9.1 (Boulder 13B143)
