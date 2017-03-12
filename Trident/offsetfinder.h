@@ -106,7 +106,6 @@ typedef enum {
     iPad33_iOS921,
     iPad33_iOS930,
     iPad33_iOS931,
-    iPad33_iOS920,
     iPad33_iOS932,
     iPad33_iOS933,
     iPad33_iOS934,
