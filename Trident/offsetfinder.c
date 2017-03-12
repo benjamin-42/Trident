@@ -5,7 +5,6 @@
 //  Created by Benjamin Randazzo on 14/12/2016.
 //  Copyright © 2016 Benjamin Randazzo. All rights reserved.
 //
-//
 
 #include "offsetfinder.h"
 
