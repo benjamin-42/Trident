@@ -129,6 +129,7 @@ t_target_environment info_to_target_environment(const char *device_model, const 
     determineTarget("iPad3,2", "9.3.2", iPad32_iOS932);
     determineTarget("iPad3,2", "9.3.3", iPad32_iOS933);
     determineTarget("iPad3,2", "9.3.4", iPad32_iOS934);
+    determineTarget("iPad3,3", "9.0.2", iPad33_iOS902);
     determineTarget("iPad3,3", "9.1", iPad33_iOS910);
     determineTarget("iPad3,3", "9.2", iPad33_iOS920);
     determineTarget("iPad3,3", "9.2.1", iPad33_iOS921);
@@ -267,6 +268,7 @@ uint32_t find_OSSerializer_serialize(void) {
         case iPad32_iOS932: return 0x318264;
         case iPad32_iOS933: return 0x318388;
         case iPad32_iOS934: return 0x318388;
+        case iPad33_iOS902: return 0x317de4;
         case iPad33_iOS910: return 0x319450;
         case iPad33_iOS920: return 0x3106fc;
         case iPad33_iOS921: return 0x3107fc;
@@ -402,6 +404,7 @@ uint32_t find_OSSymbol_getMetaClass(void) {
         case iPad32_iOS932: return 0x31aa6c;
         case iPad32_iOS933: return 0x31ab90;
         case iPad32_iOS934: return 0x31ab90;
+        case iPad33_iOS902: return 0x31a5d0;
         case iPad33_iOS910: return 0x31bc3c;
         case iPad33_iOS920: return 0x312e18;
         case iPad33_iOS921: return 0x312f18;
@@ -537,6 +540,7 @@ uint32_t find_calend_gettime(void) {
         case iPad32_iOS932: return 0x1e170;
         case iPad32_iOS933: return 0x1e200;
         case iPad32_iOS934: return 0x1e200;
+        case iPad33_iOS902: return 0x1daec;
         case iPad33_iOS910: return 0x1db34;
         case iPad33_iOS920: return 0x1de84;
         case iPad33_iOS921: return 0x1de60;
@@ -671,6 +675,7 @@ uint32_t find_bufattr_cpx(void) {
         case iPad32_iOS932: return 0xd9848;
         case iPad32_iOS933: return 0xd9838;
         case iPad32_iOS934: return 0xd9838;
+        case iPad33_iOS902: return 0xd97d0;
         case iPad33_iOS910: return 0xd97d0;
         case iPad33_iOS920: return 0xd8750;
         case iPad33_iOS921: return 0xd8750;
@@ -806,6 +811,7 @@ uint32_t find_clock_ops(void) {
         case iPad32_iOS932: return 0x403428;
         case iPad32_iOS933: return 0x403428;
         case iPad32_iOS934: return 0x403428;
+        case iPad33_iOS902: return 0x4043c0;
         case iPad33_iOS910: return 0x4053cc;
         case iPad33_iOS920: return 0x3fc3dc;
         case iPad33_iOS921: return 0x3fc3dc;
@@ -941,6 +947,7 @@ uint32_t find_copyin(void) {
         case iPad32_iOS932: return 0xc76b4;
         case iPad32_iOS933: return 0xc76b4;
         case iPad32_iOS934: return 0xc76b4;
+        case iPad33_iOS902: return 0xc7754;
         case iPad33_iOS910: return 0xc7754;
         case iPad33_iOS920: return 0xc6754;
         case iPad33_iOS921: return 0xc6754;
@@ -1076,6 +1083,7 @@ uint32_t find_bx_lr(void) {
         case iPad32_iOS932: return 0xd984a;
         case iPad32_iOS933: return 0xd983a;
         case iPad32_iOS934: return 0xd983a;
+        case iPad33_iOS902: return 0xd97d2;
         case iPad33_iOS910: return 0xd97d2;
         case iPad33_iOS920: return 0xd8752;
         case iPad33_iOS921: return 0xd8752;
@@ -1211,6 +1219,7 @@ uint32_t find_write_gadget(void) {
         case iPad32_iOS932: return 0xc73e8;
         case iPad32_iOS933: return 0xc73e8;
         case iPad32_iOS934: return 0xc73e8;
+        case iPad33_iOS902: return 0xc7488;
         case iPad33_iOS910: return 0xc7488;
         case iPad33_iOS920: return 0xc6488;
         case iPad33_iOS921: return 0xc6488;
@@ -1346,6 +1355,7 @@ uint32_t find_vm_kernel_addrperm(void) {
         case iPad32_iOS932: return 0x455844;
         case iPad32_iOS933: return 0x455844;
         case iPad32_iOS934: return 0x455844;
+        case iPad33_iOS902: return 0x455fa0;
         case iPad33_iOS910: return 0x457030;
         case iPad33_iOS920: return 0x44e840;
         case iPad33_iOS921: return 0x44e840;
@@ -1481,6 +1491,7 @@ uint32_t find_kernel_pmap(void) {
         case iPad32_iOS932: return 0x3f6454;
         case iPad32_iOS933: return 0x3f6454;
         case iPad32_iOS934: return 0x3f6454;
+        case iPad33_iOS902: return 0x3f7444;
         case iPad33_iOS910: return 0x3f8444;
         case iPad33_iOS920: return 0x3ef444;
         case iPad33_iOS921: return 0x3ef444;
@@ -1616,6 +1627,7 @@ uint32_t find_flush_dcache(void) {
         case iPad32_iOS932: return 0xbc260;
         case iPad32_iOS933: return 0xbc1d4;
         case iPad32_iOS934: return 0xbc1d4;
+        case iPad33_iOS902: return 0xbc9b8;
         case iPad33_iOS910: return 0xbcb7c;
         case iPad33_iOS920: return 0xbb710;
         case iPad33_iOS921: return 0xbb760;
@@ -1751,6 +1763,7 @@ uint32_t find_invalidate_tlb(void) {
         case iPad32_iOS932: return 0xc7440;
         case iPad32_iOS933: return 0xc7440;
         case iPad32_iOS934: return 0xc7440;
+        case iPad33_iOS902: return 0xc74e0;
         case iPad33_iOS910: return 0xc74e0;
         case iPad33_iOS920: return 0xc64e0;
         case iPad33_iOS921: return 0xc64e0;
@@ -1886,6 +1899,7 @@ uint32_t find_task_for_pid(void) {
         case iPad32_iOS932: return 0x2fcd80;
         case iPad32_iOS933: return 0x2fcec0;
         case iPad32_iOS934: return 0x2fcec0;
+        case iPad33_iOS902: return 0x2fca70;
         case iPad33_iOS910: return 0x2fe034;
         case iPad33_iOS920: return 0x2f55b4;
         case iPad33_iOS921: return 0x2f56c4;
@@ -2021,6 +2035,7 @@ uint32_t find_setreuid(void) {
         case iPad32_iOS932: return 0x2a985c;
         case iPad32_iOS933: return 0x2a9988;
         case iPad32_iOS934: return 0x2a9988;
+        case iPad33_iOS902: return 0x2a9754;
         case iPad33_iOS910: return 0x2aa31c;
         case iPad33_iOS920: return 0x2a3ab4;
         case iPad33_iOS921: return 0x2a3bc4;
@@ -2156,6 +2171,7 @@ uint32_t find_setreuid_cred_update(void) {
         case iPad32_iOS932: return 0xe031;
         case iPad32_iOS933: return 0xe031;
         case iPad32_iOS934: return 0xe031;
+        case iPad33_iOS902: return 0xe031;
         case iPad33_iOS910: return 0xe031;
         case iPad33_iOS920: return 0xe031;
         case iPad33_iOS921: return 0xe031;
@@ -2291,6 +2307,7 @@ uint32_t find_pid_check(void) {
         case iPad32_iOS932: return 0x14;
         case iPad32_iOS933: return 0x14;
         case iPad32_iOS934: return 0x14;
+        case iPad33_iOS902: return 0x16;
         case iPad33_iOS910: return 0x16;
         case iPad33_iOS920: return 0x14;
         case iPad33_iOS921: return 0x14;
@@ -2426,6 +2443,7 @@ uint32_t find_posix_check(void) {
         case iPad32_iOS932: return 0x3e;
         case iPad32_iOS933: return 0x3e;
         case iPad32_iOS934: return 0x3e;
+        case iPad33_iOS902: return 0x40;
         case iPad33_iOS910: return 0x40;
         case iPad33_iOS920: return 0x3e;
         case iPad33_iOS921: return 0x3e;
@@ -2561,6 +2579,7 @@ uint32_t find_mac_proc_check(void) {
         case iPad32_iOS932: return 0x1e6;
         case iPad32_iOS933: return 0x1e6;
         case iPad32_iOS934: return 0x1e6;
+        case iPad33_iOS902: return 0x224;
         case iPad33_iOS910: return 0x224;
         case iPad33_iOS920: return 0x1e6;
         case iPad33_iOS921: return 0x1e6;
