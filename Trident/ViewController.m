@@ -52,7 +52,9 @@ void exploit(uint32_t, bool);
     initialize();
     uint32_t kernel_base = leak_kernel_base();
     printf("kernel base: %p\n", (void *)kernel_base);
-    exploit(kernel_base, strncmp([[[UIDevice currentDevice] systemVersion] cStringUsingEncoding:NSUTF8StringEncoding], "9.0", 3) == 0);
+    
+    bool pre91 = strncmp([[[UIDevice currentDevice] systemVersion] cStringUsingEncoding:NSUTF8StringEncoding], "9.0", 3) == 0;
+    exploit(kernel_base, pre91);
 
     // Update button.
     self.button.enabled = NO;
