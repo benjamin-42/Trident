@@ -16,6 +16,7 @@
 		43CDFA561DCFA16600046EB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43CDFA541DCFA16600046EB0 /* LaunchScreen.storyboard */; };
 		43CDFA5E1DCFA1DE00046EB0 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43CDFA5D1DCFA1DE00046EB0 /* IOKit.framework */; };
 		43CDFA721DCFA34300046EB0 /* exploit.c in Sources */ = {isa = PBXBuildFile; fileRef = 43CDFA711DCFA34300046EB0 /* exploit.c */; };
+		B3230664208D05100041E84D /* bootloader in Resources */ = {isa = PBXBuildFile; fileRef = B3230663208D05100041E84D /* bootloader */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		43CDFA6A1DCFA26C00046EB0 /* IOTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IOTypes.h; path = Headers/IOKit/IOTypes.h; sourceTree = "<group>"; };
 		43CDFA6B1DCFA26C00046EB0 /* OSMessageNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OSMessageNotification.h; path = Headers/IOKit/OSMessageNotification.h; sourceTree = "<group>"; };
 		43CDFA711DCFA34300046EB0 /* exploit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = exploit.c; sourceTree = "<group>"; };
+		B3230663208D05100041E84D /* bootloader */ = {isa = PBXFileReference; lastKnownFileType = file; name = bootloader; path = Trident/bootloader; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		43CDFA3A1DCFA16600046EB0 = {
 			isa = PBXGroup;
 			children = (
+				B3230663208D05100041E84D /* bootloader */,
 				43CDFA451DCFA16600046EB0 /* Trident */,
 				43CDFA6C1DCFA27800046EB0 /* Headers */,
 				43CDFA5F1DCFA1E300046EB0 /* Frameworks */,
@@ -185,6 +188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3230664208D05100041E84D /* bootloader in Resources */,
 				43CDFA561DCFA16600046EB0 /* LaunchScreen.storyboard in Resources */,
 				43CDFA531DCFA16600046EB0 /* Assets.xcassets in Resources */,
 				43CDFA511DCFA16600046EB0 /* Main.storyboard in Resources */,
